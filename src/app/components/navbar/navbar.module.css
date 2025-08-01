@@ -1,0 +1,37 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem  1rem;
+}
+
+.navbarLinks{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.navberLinksTitle{
+  color: var(--color-text-primary);
+}
+
+.navbarLinks a {
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.95;
+    color: var(--color-text-secondary);
+    transition: opacity 0.2s ease-in;
+}
+
+.navbarLinks a:hover{
+  color: var(--color-text-primary);
+  text-decoration: underline;
+}
+
+.navRight{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}

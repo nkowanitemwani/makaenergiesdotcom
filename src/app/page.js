@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import HomeNav from "./components/navbar/page";
 import Button from "./components/button/page";
+import MissionGrid from "./components/missiongrid/page";
 
 export default function Home() {
   return (
@@ -24,9 +25,11 @@ export default function Home() {
           <p>MAKA ENERGIES LIMITED is a proudly Zambian-owned company committed to advancing the nation's energy sector through innovation, affordability, and quality service delivery. 
             Rooted in a deep understanding of Zambia's unique energy needs, the company is dedicated to providing efficient and cost-effective electricity solutions that empower both individuals and businesses.
           </p>
-          <h1>Our Mission</h1>
+        </section>
+        <section className={styles.mission}>
+           <h1>Our Mission</h1>
           <p>built on four core principles:</p>
-
+          <MissionGrid></MissionGrid>
         </section>
         
       </main>

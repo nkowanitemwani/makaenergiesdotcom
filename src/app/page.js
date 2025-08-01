@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import HomeNav from "./components/navbar/page";
 import Button from "./components/button/page";
 import MissionGrid from "./components/missiongrid/page";
+import WorksGrid from "./components/worksgrid/page";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
           </div>
           <div className={styles.heroCtas}>
             <Button style={{padding : "0 80px"}}>Get A Quote</Button>
-            <Button>Contact Us</Button>
+            <Button style={{background : "#1e2a3a"}}>Contact Us</Button>
           </div>
           </div>
         </section>
@@ -28,8 +29,12 @@ export default function Home() {
         </section>
         <section className={styles.mission}>
            <h1>Our Mission</h1>
-          <p>built on four core principles:</p>
+          <p>built on four core principles</p>
           <MissionGrid></MissionGrid>
+        </section>
+        <section className={styles.work}>
+           <h1>Past Work & Achievements</h1>
+           <WorksGrid></WorksGrid>
         </section>
         
       </main>

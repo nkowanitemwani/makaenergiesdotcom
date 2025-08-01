@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem  1rem;
+  background: transparent;
 }
 
 .navbarLinks{
@@ -13,19 +14,19 @@
 }
 
 .navberLinksTitle{
-  color: var(--color-text-primary);
+  color: #f8f9fb;
 }
 
 .navbarLinks a {
     font-size: 20px;
     font-weight: 400;
     opacity: 0.95;
-    color: var(--color-text-secondary);
+    color: #f8f9fb;
     transition: opacity 0.2s ease-in;
 }
 
 .navbarLinks a:hover{
-  color: var(--color-text-primary);
+  color: #ffffff;
   text-decoration: underline;
 }
 

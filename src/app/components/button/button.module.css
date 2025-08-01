@@ -1,32 +1,16 @@
 .hplcCta {
-  background: var(--button-bg);
-  color: var(--button-text);
-  border: 2.5px solid var(--button-border);
+  background: #ff8c42;
+  color: #f8f9fb;
   padding: 5px 5px;
   border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 500;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: ease 0.3s;
   display: inline-block;
-  text-decoration: none;
   text-align: center;
 }
 
 .hplcCta:hover {
-  transform: translateY(-2px);
-}
-
-.hplcCta:active {
-  transform: translateY(0);
-}
-
-.hplcCta:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-}
-
-.hplcCta:disabled:hover {
-  transform: none;
+  border: 2.5px solid #f8f9fb;
 }

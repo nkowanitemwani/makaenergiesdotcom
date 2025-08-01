@@ -19,7 +19,7 @@ export default function HomeNav (){
             </div>
             <div className={styles.themeSwitch}></div>
             <div className={styles.navRight}>
-            <Button href="../pages/login" style={{fontSize : '16px',fontWeight : '400',padding : '5px 5px'}}>Get A Quote</Button>
+            <Button href="#" style={{padding : '5px 50px'}}>Get A Quote</Button>
             </div>
           </nav>
       </header>

@@ -4,13 +4,29 @@ import styles from "../missiongrid/missiongrid.module.css"
 
 const works = [
     {
-        title: "Avocodo Mining Limited",
-        subTitle: (<ul>
-            <li>11kV overhead line construction</li>
-            <li>1600kVA transformer installation</li>
-            <li>high voltage cable termination</li>
-            <li>medium voltage equipment installation</li>
-        </ul>)
+        title: "AVOCODO MINING LIMITED",
+        subTitle:[
+             "11kV overhead line construction.",
+            "1600kVA transformer installation.",
+            "High voltage cable termination.",
+            "Medium voltage equipment installation."
+        ]
+           
+    },
+    {
+        title: "HUI FAN COMPANY",
+        subTitle:[
+            "15M overhead line construction.",
+            "11kV switch gear intstallation.",
+            "Excavation,laying & connection of 65M 11kV XLPE cable."
+        ]
+    },
+    {
+        title: "WIDEWAY INTERNATIONAL COMPANY",
+        subTitle:[
+            "Substation construction.",
+            "Ground mounted 500kVA transformer installation with earthing.",
+        ]
     }
 ];
 

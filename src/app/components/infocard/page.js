@@ -11,7 +11,17 @@ export default function InfoCard ({icon: Icon, title, subTitle}){
                 </div>
             )}
             <h3 className={styles.title}>{title}</h3>
-            <div className={styles.subTitle}>{subTitle}</div>
+                <div className={styles.subTitle}>
+                {Array.isArray(subTitle) ? (
+                    <ul>
+                        {subTitle.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                ) : (
+                    subTitle
+                )}
+            </div>
         </div>
     )
 }

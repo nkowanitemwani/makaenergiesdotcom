@@ -4,6 +4,7 @@ import HomeNav from "./components/navbar/page";
 import Button from "./components/button/page";
 import MissionGrid from "./components/missiongrid/page";
 import WorksGrid from "./components/worksgrid/page";
+import GetInTocuh from "./components/getintouch/page";
 
 export default function Home() {
   return (
@@ -35,6 +36,10 @@ export default function Home() {
         <section className={styles.work}>
            <h1>Past Work & Achievements</h1>
            <WorksGrid></WorksGrid>
+        </section>
+        <section className={styles.quickContact}>
+          <h1>Get In Touch</h1>
+          <GetInTocuh></GetInTocuh>
         </section>
         
       </main>

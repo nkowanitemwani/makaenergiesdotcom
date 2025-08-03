@@ -1,12 +1,11 @@
 .hplcCta {
   background: #ff6b35;
   color: #f8f9fb;
-  padding: 5px 5px;
+  padding: 0.5rem 0.5rem;
   border-radius: 5px;
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
-  display: inline-block;
   text-align: center;
   border: none;
 }

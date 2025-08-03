@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./footer.module.css";
+import Link from "next/link";
 
 export default function Footer(){
   return(
@@ -16,18 +17,18 @@ export default function Footer(){
           <div className={styles.footerInfoCenter}>
             <h3>Navigation</h3>
             <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Careers</a></li>    
+              <li><Link href="#">About</Link></li>
+              <li><Link href="#">Services</Link></li>
+              <li><Link href="#">Contact</Link></li>
+              <li><Link href="#">Our Team</Link></li>
+              <li><Link href="#">Careers</Link></li>    
             </ul>
            </div>
           <div className={styles.footerInfoRight}>
-            <h3>Get In Touch</h3>
+            <h3>Contact Info</h3>
             <ul>
-              <li>jengosoftware@gmail.com</li>
-              <li>+260 964 615 456</li>
+              <li>omicronelectricals</li>
+              <li>+260 966 787 930 </li>
             </ul>
           </div>
         </div>

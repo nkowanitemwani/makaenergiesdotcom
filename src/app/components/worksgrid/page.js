@@ -8,15 +8,12 @@ const works = [
         subTitle:[
              "11kV overhead line construction.",
             "1600kVA transformer installation.",
-            "High voltage cable termination.",
-            "Medium voltage equipment installation."
         ]
            
     },
     {
         title: "HUI FAN COMPANY",
         subTitle:[
-            "15M overhead line construction.",
             "11kV switch gear intstallation.",
             "Excavation,laying & connection of 65M 11kV XLPE cable."
         ]

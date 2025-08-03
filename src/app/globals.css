@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+a:hover{
+  text-decoration: underline;
+}
+
 ul{
   list-style: none;
   margin-top: 5px;
@@ -45,7 +49,7 @@ li{
 }
 
 h1 {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 2rem;
 }
 
@@ -72,6 +76,10 @@ hr{
   width: 50%;
   margin: 0 auto;
   border: 2px solid var(--background);
+}
+
+section{
+  gap: 1.5rem;
 }
 
 /* @media (prefers-color-scheme: dark) {

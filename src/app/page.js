@@ -13,18 +13,18 @@ export default function Home() {
           <HomeNav></HomeNav>
           <div className={styles.heroContainer}>
           <div className={styles.heroInfo}>
-            <h1 className={styles.title}>Powering Zambia With Reliable Engergy Solutions</h1>
-            <p className={styles.description}>Electrical,Civil,Mechanical & Supply Services</p>
+            <h1>Powering Zambia With Reliable Engergy Solutions</h1>
+            <p>Electrical,Civil,Mechanical & Supply Services</p>
           </div>
           <div className={styles.heroCtas}>
-            <Button style={{padding : "0 80px"}}>Get A Quote</Button>
+            <Button style={{padding : "0 3rem"}}>Get A Quote</Button>
             <Button style={{background : "#1e2a3a"}}>Contact Us</Button>
           </div>
           </div>
         </section>
         <section className={styles.who}>
-          <h1 className={styles.whoTitle}>Who Are We ?</h1>
-          <p className={styles.whoDescription}>MAKA ENERGIES LIMITED is a proudly Zambian-owned company committed to advancing the nation's energy sector through innovation, affordability, and quality service delivery. 
+          <h1>Who Are We ?</h1>
+          <p>MAKA ENERGIES LIMITED is a proudly Zambian-owned company committed to advancing the nation's energy sector through innovation, affordability, and quality service delivery. 
             Rooted in a deep understanding of Zambia's unique energy needs, the company is dedicated to providing efficient and cost-effective electricity solutions that empower both individuals and businesses.
           </p>
         </section>

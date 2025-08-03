@@ -1,8 +1,11 @@
 .navbar{
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 1rem  1rem;
   background: transparent;
+  gap: 1rem;
+  margin: 0 auto;
 }
 
 .navbarLinks{
@@ -13,21 +16,11 @@
 
 }
 
-.navberLinksTitle{
-  color: #f8f9fb;
-}
-
 .navbarLinks a {
     font-size: 20px;
-    font-weight: 400;
-    opacity: 0.95;
+    font-weight: 500;
     color: #f8f9fb;
     transition: opacity 0.2s ease-in;
-}
-
-.navbarLinks a:hover{
-  color: #ffffff;
-  text-decoration: underline;
 }
 
 .navRight{

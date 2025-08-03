@@ -1,6 +1,6 @@
 .missionGrid{
   display: flex;
-  gap: 20px;
-  padding: 20px;
+  gap: 2rem;
+  padding: 1.5rem;
 
 }

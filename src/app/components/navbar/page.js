@@ -17,7 +17,6 @@ export default function HomeNav (){
                 <Link href="#">Our Team</Link>
                 <Link href="#">Careers</Link>
             </div>
-            <div className={styles.themeSwitch}></div>
             <div className={styles.navRight}>
             <Button href="#" style={{padding : '5px 50px'}}>Get A Quote</Button>
             </div>

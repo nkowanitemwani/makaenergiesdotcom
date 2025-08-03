@@ -1,9 +1,8 @@
 
-import Button from "../button/page"
 import styles from "./infocard.module.css"
 
 
-export default function InfoCard ({icon: Icon, title, subTitle,button:Button}){
+export default function InfoCard ({icon: Icon, title, subTitle}){
 
 
     return(
@@ -25,8 +24,6 @@ export default function InfoCard ({icon: Icon, title, subTitle,button:Button}){
                     subTitle
                 )}
             </div>
-            {Button && <Button></Button>}
-            
         </div>
     )
 }

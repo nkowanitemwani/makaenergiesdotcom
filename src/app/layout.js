@@ -17,10 +17,6 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const roboto = Roboto({
-  variable: "--font-roboto",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Create Next App",

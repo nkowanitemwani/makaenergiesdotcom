@@ -3,10 +3,10 @@
   flex-direction: column;
   background: url("/images/maka2.jpg");
   background-position: center;
-  background-color: rgba(2, 12, 52, 0.8);
+  background-color: rgba(2, 12, 52, 0.5);
   background-blend-mode: overlay;
   background-size: cover;
-  height: 65vh;
+  height: 70vh;
   
 }
 
@@ -24,13 +24,9 @@
 
 .title{
   color: #f8f9fb;
-  font-weight: 900;
-  font-size: 2rem;
 }
 .description{
   color: #f8f9fb;
-  font-weight: 500;
-  font-size: 1.5rem;
 }
 
 .heroCtas{

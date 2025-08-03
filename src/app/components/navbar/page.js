@@ -11,11 +11,11 @@ export default function HomeNav (){
               <Link href="#" className={styles.navbarLinksTitle}>Maka Engergies</Link>
             </div>
             <div className={styles.navbarLinks}>
-                <Link href="./">Home</Link>
                 <Link href="#">About</Link>
                 <Link href="#">Services</Link>
                 <Link href="#">Contact</Link>
-                <Link href="#">Contact</Link>
+                <Link href="#">Our Team</Link>
+                <Link href="#">Careers</Link>
             </div>
             <div className={styles.themeSwitch}></div>
             <div className={styles.navRight}>

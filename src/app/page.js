@@ -1,10 +1,10 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import HomeNav from "./components/navbar/page";
 import Button from "./components/button/page";
 import MissionGrid from "./components/missiongrid/page";
 import WorksGrid from "./components/worksgrid/page";
 import GetInTocuh from "./components/getintouch/page";
+import Footer from "./components/footer/page";
 
 export default function Home() {
   return (
@@ -23,8 +23,8 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.who}>
-          <h1>Who Are We ?</h1>
-          <p>MAKA ENERGIES LIMITED is a proudly Zambian-owned company committed to advancing the nation's energy sector through innovation, affordability, and quality service delivery. 
+          <h1 className={styles.whoTitle}>Who Are We ?</h1>
+          <p className={styles.whoDescription}>MAKA ENERGIES LIMITED is a proudly Zambian-owned company committed to advancing the nation's energy sector through innovation, affordability, and quality service delivery. 
             Rooted in a deep understanding of Zambia's unique energy needs, the company is dedicated to providing efficient and cost-effective electricity solutions that empower both individuals and businesses.
           </p>
         </section>
@@ -41,6 +41,7 @@ export default function Home() {
           <h1>Get In Touch</h1>
           <GetInTocuh></GetInTocuh>
         </section>
+        <Footer></Footer>
         
       </main>
   );

@@ -10,18 +10,18 @@ export default function Footer(){
            <div className={styles.footerInfoImage}>
             </div>
             <div className={styles.footerInfoLeftText}>
-             <h1>Maka Engergies</h1>
+             <Link href="../" ><h1>Maka Engergies</h1></Link>
              <p>Powering Zambia With Reliable Engergy Solutions</p>      
             </div>
            </div>
           <div className={styles.footerInfoCenter}>
             <h3>Navigation</h3>
             <ul>
-              <li><Link href="#">About</Link></li>
-              <li><Link href="#">Services</Link></li>
-              <li><Link href="#">Contact</Link></li>
-              <li><Link href="#">Our Team</Link></li>
-              <li><Link href="#">Careers</Link></li>    
+              <li><Link href="../pages/about">About</Link></li>
+              <li><Link href="../pages/services">Services</Link></li>
+              <li><Link href="../pages/contact">Contact</Link></li>
+              <li><Link href="../pages/team">Our Team</Link></li>
+              <li><Link href="../pages/careers">Careers</Link></li>    
             </ul>
            </div>
           <div className={styles.footerInfoRight}>

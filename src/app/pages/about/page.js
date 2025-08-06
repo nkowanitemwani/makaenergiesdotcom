@@ -1,4 +1,7 @@
+"use client"
+
 import React from "react";
+import { useEffect,useState } from "react";
 import styles from "./about.module.css";
 import HomeNav from "@/app/components/navbar/page";
 import Footer from "@/app/components/footer/page";
@@ -6,6 +9,14 @@ import PolicyGrid from "@/app/components/policygrid/page";
 import Button from "@/app/components/button/page";
 
 export default function AboutPage(){
+
+  const [policyCard,setPolicyCard] = useState(false);
+  const openPolicyCard = () => setPolicyCard(true);
+  const closePolicyCard = () => setPolicyCard(false);
+
+
+
+  
     return(
         <main>
           <HomeNav style={{background : "#1a2332"}}></HomeNav>
@@ -18,9 +29,13 @@ export default function AboutPage(){
           <section className={styles.policy}>
            <h1>Our Policies</h1>
            <PolicyGrid></PolicyGrid>
-           <Button>Details</Button>
+           <Button onClick={openPolicyCard}>Details</Button>
           </section>
           <Footer></Footer>
+
+
+          {policyCard && <PolicyGrid></PolicyGrid>}
         </main>
+
     );
 }

@@ -75,7 +75,7 @@ footer p {
 hr{
   width: 50%;
   margin: 0 auto;
-  border: 2px solid var(--background);
+  border: 1px solid var(--background);
 }
 
 section{

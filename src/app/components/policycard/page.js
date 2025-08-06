@@ -6,9 +6,10 @@ import AboutPage from "@/app/pages/about/page";
 
 export default function PolicyCard(){
     return(
-        <main className={styles.main}>
+        <div className={styles.main}>
          <div className={styles.container}>
          <h1>Maka Engergies Comapny Policies</h1>
+         <hr></hr>
             <section>
              <h1>Health And Safety Policy</h1>
              <p>
@@ -30,9 +31,10 @@ export default function PolicyCard(){
             <h1>Security Policy</h1>
             <p>This policy is mainly to ensure that workers interests are protected at all time.</p>   
             </section>
+            <hr></hr>
+            <Button>Close</Button>
          </div>
-         <Button></Button>
            
-        </main>
+        </div>
     )
 }

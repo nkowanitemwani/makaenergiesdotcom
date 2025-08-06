@@ -34,7 +34,7 @@ export default function AboutPage(){
           <Footer></Footer>
 
 
-          {policyCard && <PolicyGrid></PolicyGrid>}
+          {policyCard && <PolicyGrid></PolicyGrid>};
         </main>
 
     );

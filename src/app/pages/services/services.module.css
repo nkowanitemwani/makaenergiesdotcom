@@ -1,0 +1,8 @@
+.service p {
+    font-size: 1.25rem;
+}
+
+.service span{
+    font-weight: 600;
+    color: #ff6b35;
+}

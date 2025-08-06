@@ -36,6 +36,7 @@ export default function Home() {
         <section className={styles.work}>
            <h1>Past Work & Achievements</h1>
            <WorksGrid></WorksGrid>
+           <Button>View Certificate</Button>
         </section>
         <section className={styles.quickContact}>
           <h1>Get In Touch</h1>

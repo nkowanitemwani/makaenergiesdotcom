@@ -5,3 +5,23 @@
 .history span {
     color: #ff6b35;
 }
+
+.legal ol{
+  list-style: none;
+}
+
+.legal li {
+  position: relative;
+  padding-left: 15px;
+}
+
+.legal li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ff6b35;
+}
+
+.future p{
+  font-size: 1.25rem;
+}

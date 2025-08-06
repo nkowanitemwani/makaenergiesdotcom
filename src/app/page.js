@@ -3,7 +3,7 @@ import HomeNav from "./components/navbar/page";
 import Button from "./components/button/page";
 import MissionGrid from "./components/missiongrid/page";
 import WorksGrid from "./components/worksgrid/page";
-import GetInTocuh from "./components/getintouch/page";
+import GetInTocuh from "./components/getintouchgrid/page";
 import Footer from "./components/footer/page";
 
 export default function Home() {

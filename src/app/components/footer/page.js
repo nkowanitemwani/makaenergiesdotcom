@@ -27,8 +27,10 @@ export default function Footer(){
           <div className={styles.footerInfoRight}>
             <h3>Contact Info</h3>
             <ul>
-              <li>omicronelectricals</li>
+              <li>omicronelectricals@gmail.com</li>
               <li>+260 966 787 930 </li>
+              <li>+260 955 432 663</li>
+              <li>+269 955 881 931</li>
             </ul>
           </div>
         </div>

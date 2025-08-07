@@ -6,11 +6,11 @@ import styles from "../missiongrid/missiongrid.module.css"
 const contacts = [
     {
         title:"COSMAS MUKUKA",
-        subTitle:"+260 966 787 930"
+        subTitle:["+260 966 787 930","+260 955 881 931"]
     },
     {
         title:"MUTALE MUKUKA",
-        subTitle:"+260 955 432 663"
+        subTitle:["+260 955 432 663"]
     }
 ];
 

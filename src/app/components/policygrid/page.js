@@ -28,7 +28,6 @@ export default function PolicyGrid(){
                 title={policy.title}
                 icon={policy.icon}></InfoCard>
             ))}
-
         </div>
     );
 }

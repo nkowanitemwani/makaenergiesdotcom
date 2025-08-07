@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./contact.module.css";
 import HomeNav from "@/app/components/navbar/page";
 import Footer from "@/app/components/footer/page";
-import ContactCards from "@/app/components/contactcardgrid/page";
+import ContactCards from "@/app/components/grids/contactcardgrid/page";
 import Button from "@/app/components/button/page";
 
 

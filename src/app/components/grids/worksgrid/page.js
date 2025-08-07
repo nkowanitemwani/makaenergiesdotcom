@@ -1,4 +1,4 @@
-import InfoCard from "../infocard/page";
+import InfoCard from "../../cards/infocard/page";
 import React from "react";
 import styles from "../missiongrid/missiongrid.module.css"
 

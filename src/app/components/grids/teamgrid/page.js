@@ -1,5 +1,5 @@
 import styles from "./teamgrid.module.css"
-import TeamCard from "../teamcard/page";
+import TeamCard from "../../cards/teamcard/page";
 
 
 

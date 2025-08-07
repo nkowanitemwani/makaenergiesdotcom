@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./policycard.module.css"
-import Button from "../button/page";
+import Button from "../../button/page";
 import AboutPage from "@/app/pages/about/page";
 
 

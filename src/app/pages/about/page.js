@@ -5,9 +5,9 @@ import { useState } from "react";
 import styles from "./about.module.css";
 import HomeNav from "@/app/components/navbar/page";
 import Footer from "@/app/components/footer/page";
-import PolicyGrid from "@/app/components/policygrid/page";
+import PolicyGrid from "@/app/components/grids/policygrid/page";
 import Button from "@/app/components/button/page";
-import PolicyCard from "@/app/components/policycard/page";
+import PolicyCard from "@/app/components/cards/policycard/page";
 
 export default function AboutPage(){
 

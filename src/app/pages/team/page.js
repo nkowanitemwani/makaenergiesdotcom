@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./team.module.css";
 import HomeNav from "@/app/components/navbar/page";
 import Footer from "@/app/components/footer/page";
-import TeamGrid from "@/app/components/teamgrid/page";
+import TeamGrid from "@/app/components/grids/teamgrid/page";
 
 export default function TeamPage(){
     return(

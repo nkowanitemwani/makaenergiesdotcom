@@ -2,12 +2,17 @@ import React from "react";
 import styles from "./careers.module.css";
 import HomeNav from "@/app/components/navbar/page";
 import Footer from "@/app/components/footer/page";
-import PolicyCard from "@/app/components/policycard/page";
 
 export default function CareersPage(){
     return(
         <main>
         <HomeNav style={{background : "#1a2332"}}></HomeNav>
+        <section className={styles.career}>
+            <h1>Join The Maka Energies Team</h1>
+            <p>We pride ourselves on our commitment to train, empower and motivate our workers to excel in everything they do,
+               offering equal employment opportunities regardless of gender, race, nationality or religion. 
+            </p>
+        </section>
         <Footer></Footer>
         </main>
     );

@@ -1,7 +1,6 @@
 
 import styles from "./infocard.module.css"
 
-
 export default function InfoCard ({icon: Icon, title, subTitle}){
 
 

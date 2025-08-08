@@ -19,8 +19,6 @@ const careers = [
 ];
 
 
-
-
 export default function CareersGrid(){
     return(
         <div className={styles.careersGrid}>

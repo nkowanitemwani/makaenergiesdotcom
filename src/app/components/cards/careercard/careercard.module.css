@@ -1,29 +1,52 @@
 .mainCard{
-    width: 900px;
+    width: 600px;
     height: 400px;
-    background: #f8f9fb;
-    border-radius: 12px;
+    background: #1a2332;
+    border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    align-items: center;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .mainCard h2 {
+    font-size: 1.25rem;
+  }
+
+  .mainCard h3{
+    font-size: 1rem;
+  }
+
+  .mainCard li {
+    font-size: 1rem;
   }
 
 .innerCard{
   height: 150px;
-  width: 350px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   background: #f8f9fb;
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 2rem;
+}
+
+.listCard{
+    height: fit-content;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: #f8f9fb;
+    border-radius: 12px;
+    padding: 2rem;    
 }
 
 .list{

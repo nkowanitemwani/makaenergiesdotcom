@@ -1,6 +1,6 @@
 .mainCard{
     width: 600px;
-    height: 400px;
+    height: fit-content;
     background: #1a2332;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -33,11 +33,12 @@
   gap: 1rem;
   background: #f8f9fb;
   border-radius: 6px;
-  padding: 2rem;
+  margin: 2rem;
 }
 
 .listCard{
     height: fit-content;
+    min-height: 150px;
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -45,8 +46,8 @@
     align-items: center;
     gap: 1rem;
     background: #f8f9fb;
-    border-radius: 12px;
-    padding: 2rem;    
+    border-radius: 6px;
+    margin-right: 2rem;    
 }
 
 .list{

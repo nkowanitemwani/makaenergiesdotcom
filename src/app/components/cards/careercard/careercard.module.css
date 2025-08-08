@@ -1,0 +1,45 @@
+.mainCard{
+    width: 900px;
+    height: 400px;
+    background: #f8f9fb;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+.innerCard{
+  height: 150px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: #f8f9fb;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.list li {
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .list li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #ff6b35;
+  }

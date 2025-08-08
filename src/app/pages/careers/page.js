@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./careers.module.css";
 import HomeNav from "@/app/components/navbar/page";
 import Footer from "@/app/components/footer/page";
+import CareersGrid from "@/app/components/grids/careersgrid/page";
 
 export default function CareersPage(){
     return(
@@ -12,6 +13,9 @@ export default function CareersPage(){
             <p>We pride ourselves on our commitment to train, empower and motivate our workers to excel in everything they do,
                offering equal employment opportunities regardless of gender, race, nationality or religion. 
             </p>
+        </section>
+        <section>
+        <CareersGrid></CareersGrid>
         </section>
         <Footer></Footer>
         </main>

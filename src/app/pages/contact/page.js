@@ -17,7 +17,7 @@ export default function ContactPage(){
           </section>
           <section className={styles.quote}>
           <h1>Get a Quote</h1>
-          <p>Send a us a description of the service you require and we'll get back to you within 24 hours</p>
+          <p>Send a us a description of the service you require and we will get back to you within 24 hours</p>
           <form className={styles.quoteform}>
             <div className={styles.formtop}>
               <input type="text" placeholder="Name" required></input>

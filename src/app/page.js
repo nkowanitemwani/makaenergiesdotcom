@@ -24,8 +24,8 @@ export default function Home() {
         </section>
         <section className={styles.who}>
           <h1>Who Are We ?</h1>
-          <p>MAKA ENERGIES LIMITED is a proudly Zambian-owned company committed to advancing the nation's energy sector through innovation, affordability, and quality service delivery. 
-            Rooted in a deep understanding of Zambia's unique energy needs, the company is dedicated to providing efficient and cost-effective electricity solutions that empower both individuals and businesses.
+          <p>MAKA ENERGIES LIMITED is a proudly Zambian-owned company committed to advancing the nation&apos;s energy sector through innovation, affordability, and quality service delivery. 
+            Rooted in a deep understanding of Zambia&apos;s unique energy needs, the company is dedicated to providing efficient and cost-effective electricity solutions that empower both individuals and businesses.
           </p>
         </section>
         <section className={styles.mission}>

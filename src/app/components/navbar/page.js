@@ -18,7 +18,7 @@ export default function HomeNav ({...props}){
                 <Link href="../pages/careers">Careers</Link>
             </div>
             <div className={styles.navRight}>
-            <Button href="#" style={{padding : '5px 50px'}}>Get A Quote</Button>
+            <Button href="#" style={{padding : "5px 50px"}}>Get A Quote</Button>
             </div>
           </nav>
       </header>

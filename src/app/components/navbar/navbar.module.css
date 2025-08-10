@@ -20,7 +20,7 @@
     font-size: 20px;
     font-weight: 500;
     color: #f8f9fb;
-    transition: opacity 0.2s ease-in;
+    opacity: 0.9;
 }
 
 .navRight{

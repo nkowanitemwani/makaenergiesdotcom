@@ -2,8 +2,9 @@
   --background: #f8f9fb;
   --foreground: #1a2332;
 }
-/* 
-@media (prefers-color-scheme: dark) {
+
+/*
+ @media (prefers-color-scheme: dark) {
   :root {
     --background: #1a2332;
     --foreground: #f8f9fb;
@@ -56,15 +57,18 @@ h1 {
 p {
   font-weight: 500;
   font-size: 1.5rem;
+  opacity: 0.9;
 }
 
 footer {
-  height: auto;
+  height: fit-content;
   width: 100%;
   display: flex;
   flex-direction: column;
   background: var(--foreground);
   color: var(--background);
+  align-items: center;
+  justify-content: center;
 }
 
 footer p {

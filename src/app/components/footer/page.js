@@ -34,6 +34,9 @@ export default function Footer(){
             </ul>
           </div>
         </div>
+        <div className={styles.termsPolicies}>
+          <span><Link href="#">Terms Of Use</Link>{"|"}<Link href="#">Privacy Policy</Link></span>
+        </div>
         <hr></hr>
         <p className={styles.footerText}>© 2025 Maka Engergies Ltd. All rights reserved</p>
       </footer>

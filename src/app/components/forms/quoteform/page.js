@@ -114,7 +114,7 @@ const handleServiceSelect = (service) => {
               />
               <label htmlFor="privacy" className={styles.checkboxLabel}>
                 I agree to the{' '}
-                <a href="#" className={styles.privacyLink}>
+                <a href="../pages/policies" className={styles.privacyLink}>
                   Privacy Policy
                 </a>{' '}
                 and consent to being contacted by Maka Energies regarding my inquiry. 

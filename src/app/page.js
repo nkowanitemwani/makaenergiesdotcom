@@ -1,3 +1,5 @@
+"use client"
+
 import styles from "./page.module.css";
 import HomeNav from "./components/navbar/page";
 import Button from "./components/button/page";
@@ -7,6 +9,12 @@ import GetInTocuh from "./components/grids/getintouchgrid/page";
 import Footer from "./components/footer/page";
 
 export default function Home() {
+
+const viewCertificates = () => {
+  window.open("https://drive.google.com/file/d/1bo_sKdUtIFGizRQOFmmYkOaXHAUC3Ug8/view?usp=sharing","_blank");
+};
+
+
   return (
       <main>
         <section className={styles.hero}>
@@ -17,7 +25,7 @@ export default function Home() {
             <p>Electrical,Civil,Mechanical & Supply Services</p>
           </div>
           <div className={styles.heroCtas}>
-            <Button style={{padding : "0 3rem"}}>Get A Quote</Button>
+            <Button href="../pages/contact#quote" style={{padding : "0 3rem"}}>Get A Quote</Button>
             <Button href="../pages/contact" style={{background : "#1e2a3a"}}>Contact Us</Button>
           </div>
           </div>
@@ -36,7 +44,7 @@ export default function Home() {
         <section className={styles.work}>
            <h1>Past Work & Achievements</h1>
            <WorksGrid></WorksGrid>
-           <Button>View Certificate</Button>
+           <Button onClick={viewCertificates}>View Certificates</Button>
         </section>
         <section className={styles.quickContact}>
           <h1>Get In Touch</h1>

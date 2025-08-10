@@ -1,10 +1,12 @@
+"use client";
+
 import React from "react";
 import styles from "./contact.module.css";
 import HomeNav from "@/app/components/navbar/page";
 import Footer from "@/app/components/footer/page";
 import ContactCards from "@/app/components/grids/contactcardgrid/page";
-import Button from "@/app/components/button/page";
 import QuoteForm from "@/app/components/forms/quoteform/page";
+import { useEffect } from "react";
 
 
 export default function ContactPage(){
@@ -16,7 +18,7 @@ export default function ContactPage(){
             <p>Reach out to us on any of the below contacts for quick reply</p>
             <ContactCards></ContactCards>
           </section>
-          <section className={styles.quote}>
+          <section id="quote" className={styles.quote}>
           <h1>Get a Quote</h1>
           <p>Send a us a description of the service you require and we will get back to you within 24 hours</p>
           <QuoteForm></QuoteForm>

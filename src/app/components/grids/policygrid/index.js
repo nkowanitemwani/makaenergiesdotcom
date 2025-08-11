@@ -1,5 +1,5 @@
 import React from "react";
-import InfoCard from "../../cards/infocard/page";
+import InfoCard from "../../cards/infocard";
 import { Hospital, Lock, Trees } from "lucide-react";
 import styles from "../missiongrid/missiongrid.module.css"
 

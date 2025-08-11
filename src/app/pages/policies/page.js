@@ -1,7 +1,7 @@
 import styles from "../terms/terms.module.css"
 import React from "react"
-import HomeNav from "@/app/components/navbar/page";
-import Footer from "@/app/components/footer/page";
+import HomeNav from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
 
 
 export default function PolicyPage(){

@@ -2,11 +2,10 @@
 
 import React from "react";
 import styles from "./contact.module.css";
-import HomeNav from "@/app/components/navbar/page";
-import Footer from "@/app/components/footer/page";
-import ContactCards from "@/app/components/grids/contactcardgrid/page";
-import QuoteForm from "@/app/components/forms/quoteform/page";
-import { useEffect } from "react";
+import HomeNav from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
+import ContactCards from "@/app/components/grids/contactcardgrid";
+import QuoteForm from "@/app/components/forms/quoteform";
 
 
 export default function ContactPage(){

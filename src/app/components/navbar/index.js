@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./navbar.module.css"
 import Link from "next/link";
-import Button from "../button/page";
+import Button from "../button";
 
 export default function HomeNav ({...props}){
     return(

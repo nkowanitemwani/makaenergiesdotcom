@@ -1,5 +1,5 @@
 import styles from "./careersgrid.module.css"
-import CareerCard from "../../cards/careercard/page"
+import CareerCard from "../../cards/careercard"
 
 const careers = [
     {

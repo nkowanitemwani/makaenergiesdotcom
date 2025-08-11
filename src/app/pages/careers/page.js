@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./careers.module.css";
-import HomeNav from "@/app/components/navbar/page";
-import Footer from "@/app/components/footer/page";
-import CareersGrid from "@/app/components/grids/careersgrid/page";
-import InfoCard from "@/app/components/cards/infocard/page";
+import HomeNav from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
+import CareersGrid from "@/app/components/grids/careersgrid";
+import InfoCard from "@/app/components/cards/infocard";
 import { StopCircle } from "lucide-react";
 
 export default function CareersPage(){

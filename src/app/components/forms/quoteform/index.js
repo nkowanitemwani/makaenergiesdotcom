@@ -4,7 +4,7 @@ import React from "react";
 import { useState } from "react";
 import { ChevronDown } from 'lucide-react';
 import styles from "./quoteform.module.css";
-import Button from "../../button/page";
+import Button from "../../button";
 
 
 

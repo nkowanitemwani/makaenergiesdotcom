@@ -1,12 +1,12 @@
 "use client"
 
 import styles from "./page.module.css";
-import HomeNav from "./components/navbar/page";
-import Button from "./components/button/page";
-import MissionGrid from "./components/grids/missiongrid/page";
-import WorksGrid from "./components/grids/worksgrid/page";
-import GetInTocuh from "./components/grids/getintouchgrid/page";
-import Footer from "./components/footer/page";
+import HomeNav from "./components/navbar";
+import Button from "./components/button";
+import MissionGrid from "./components/grids/missiongrid";
+import WorksGrid from "./components/grids/worksgrid";
+import GetInTocuh from "./components/grids/getintouchgrid";
+import Footer from "./components/footer";
 
 export default function Home() {
 

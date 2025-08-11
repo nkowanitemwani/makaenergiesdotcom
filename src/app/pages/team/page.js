@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./team.module.css";
-import HomeNav from "@/app/components/navbar/page";
-import Footer from "@/app/components/footer/page";
-import TeamGrid from "@/app/components/grids/teamgrid/page";
+import HomeNav from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
+import TeamGrid from "@/app/components/grids/teamgrid";
 
 export default function TeamPage(){
     return(

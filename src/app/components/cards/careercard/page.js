@@ -1,3 +1,5 @@
+"use client"
+
 import styles from "./careercard.module.css";
 
 export default function CareerCard({ title, duration, dueDate, qualifications, roles }) {

@@ -19,7 +19,7 @@ export default function PolicyPage(){
 
         <h2>1. INTRODUCTION</h2>
 
-        Maka Energies Ltd ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services, including when you request quotes or apply for career opportunities.
+        Maka Energies Ltd (&qout;we,&qout; &qout;our,&qout; or &qout;us&qout;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services, including when you request quotes or apply for career opportunities.
 
         <h2>2. COMPANY INFORMATION</h2>
 
@@ -157,7 +157,7 @@ export default function PolicyPage(){
 
         If we transfer your personal information outside of Zambia, we will ensure appropriate safeguards are in place to protect your information in accordance with this Privacy Policy and applicable laws.
 
-        <h2>10. CHILDREN'S PRIVACY</h2>
+        <h2>10. CHILDREN&apos;S PRIVACY</h2>
 
         Our website and services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If we become aware that we have collected personal information from a child, we will take steps to delete that information.
 
@@ -170,7 +170,7 @@ export default function PolicyPage(){
         We may update this Privacy Policy from time to time. We will notify you of any material changes by:
         - Posting the updated policy on our website
         - Sending email notification (where appropriate)
-        - Updating the "Last Updated" date at the top of this policy
+        - Updating the &qout;Last Updated&qout; date at the top of this policy
 
         Your continued use of our website after any changes constitutes acceptance of the updated Privacy Policy.
 

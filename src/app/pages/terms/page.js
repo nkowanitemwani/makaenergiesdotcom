@@ -20,7 +20,7 @@ export default function TermsPage(){
 
             <h2>1. ACCEPTANCE OF TERMS</h2>
 
-            By accessing and using the Maka Energies Ltd website (the "Website"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+            By accessing and using the Maka Energies Ltd website (the &qout;Website&quot;), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
 
             <h2>2. COMPANY INFORMATION</h2>
 
@@ -30,7 +30,7 @@ export default function TermsPage(){
 
             <h2>3. USE LICENSE</h2> 
 
-            Permission is granted to temporarily download one copy of the materials on Maka Energies Ltd's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+            Permission is granted to temporarily download one copy of the materials on Maka Energies Ltd&apos;s website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
 
             - Modify or copy the materials
             - Use the materials for any commercial purpose or for any public display (commercial or non-commercial)
@@ -71,21 +71,21 @@ export default function TermsPage(){
 
             <h2>7. DISCLAIMER</h2>
 
-            The materials on Maka Energies Ltd's website are provided on an 'as is' basis. Maka Energies Ltd makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+            The materials on Maka Energies Ltd&apos;s website are provided on an &apos;as is&apos; basis. Maka Energies Ltd makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
 
             Further, Maka Energies Ltd does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.
 
             <h2>8. LIMITATIONS</h2>
 
-            In no event shall Maka Energies Ltd or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Maka Energies Ltd's website, even if Maka Energies Ltd or its authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
+            In no event shall Maka Energies Ltd or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Maka Energies Ltd&apos;s website, even if Maka Energies Ltd or its authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
 
             <h2>9. ACCURACY OF MATERIALS</h2>
 
-            The materials appearing on Maka Energies Ltd's website could include technical, typographical, or photographic errors. Maka Energies Ltd does not warrant that any of the materials on its website are accurate, complete, or current. Maka Energies Ltd may make changes to the materials contained on its website at any time without notice.
+            The materials appearing on Maka Energies Ltd&apos;s website could include technical, typographical, or photographic errors. Maka Energies Ltd does not warrant that any of the materials on its website are accurate, complete, or current. Maka Energies Ltd may make changes to the materials contained on its website at any time without notice.
 
             <h2>10. LINKS</h2>
 
-            Maka Energies Ltd has not reviewed all of the sites linked to our website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Maka Energies Ltd of the site. Use of any such linked website is at the user's own risk.
+            Maka Energies Ltd has not reviewed all of the sites linked to our website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Maka Energies Ltd of the site. Use of any such linked website is at the user&apos;s own risk.
 
             <h2>11. MODIFICATIONS</h2>
 

@@ -22,9 +22,6 @@ export default function ContactPage(){
           <p>Send a us a description of the service you require and we will get back to you within 24 hours</p>
           <QuoteForm></QuoteForm>
           </section>
-          <section className={styles.map}>
-           <h1>Pay Us a Visit</h1>
-          </section>
           <Footer></Footer>
         </main>
     );

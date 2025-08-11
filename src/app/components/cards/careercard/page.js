@@ -2,7 +2,12 @@
 
 import styles from "./careercard.module.css";
 
-export default function CareerCard({ title, duration, dueDate, qualifications, roles }) {
+export default function CareerCard({ 
+  title = "Untitled Role",
+  duration = "N/A", 
+  dueDate = "TBA", 
+  qualifications = [], 
+  roles = [] }) {
   return (
     <div className={styles.mainCard}>
       
@@ -16,19 +21,19 @@ export default function CareerCard({ title, duration, dueDate, qualifications, r
       <div className={styles.body}>
         <div className={styles.section}>
           <h3>Qualifications</h3>
-          <ul className={styles.list}>
-            {qualifications.map((q, i) => (
-              <li key={i}>{q}</li>
-            ))}
-          </ul>
+        <ul className={styles.list}>
+          {(qualifications || []).map((q, i) => (
+            <li key={i}>{q}</li>
+          ))}
+        </ul>
         </div>
         <div className={styles.section}>
           <h3>Roles</h3>
-          <ul className={styles.list}>
-            {roles.map((r, i) => (
-              <li key={i}>{r}</li>
-            ))}
-          </ul>
+        <ul className={styles.list}>
+          {(roles || []).map((r, i) => (
+            <li key={i}>{r}</li>
+          ))}
+        </ul>
         </div>
       </div>
 

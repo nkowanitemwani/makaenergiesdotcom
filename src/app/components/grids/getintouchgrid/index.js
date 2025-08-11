@@ -1,5 +1,5 @@
 import React from "react";
-import InfoCard from "../../cards/infocard/page";
+import InfoCard from "../../cards/infocard";
 import { Locate, Mail, Map, PhoneForwarded } from "lucide-react"; 
 import styles from "../missiongrid/missiongrid.module.css"
 

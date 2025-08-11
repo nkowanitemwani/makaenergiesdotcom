@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./policycard.module.css"
-import Button from "../../button/page";
+import Button from "../../button";
 
 export default function PolicyCard({ onClose }){
     return(

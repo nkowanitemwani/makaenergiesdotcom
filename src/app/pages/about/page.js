@@ -3,11 +3,11 @@
 import React from "react";
 import { useState } from "react";
 import styles from "./about.module.css";
-import HomeNav from "@/app/components/navbar/page";
-import Footer from "@/app/components/footer/page";
-import PolicyGrid from "@/app/components/grids/policygrid/page";
-import Button from "@/app/components/button/page";
-import PolicyCard from "@/app/components/cards/policycard/page";
+import HomeNav from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
+import PolicyGrid from "@/app/components/grids/policygrid";
+import Button from "@/app/components/button";
+import PolicyCard from "@/app/components/cards/policycard";
 
 export default function AboutPage(){
 

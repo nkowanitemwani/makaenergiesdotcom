@@ -1,43 +1,41 @@
-import Button from "../../button/page";
-import styles from "./careercard.module.css"
+import styles from "./careercard.module.css";
 
+export default function CareerCard({ title, duration, dueDate, qualifications, roles }) {
+  return (
+    <div className={styles.mainCard}>
+      
+      {/* Header */}
+      <div className={styles.header}>
+        <h2>{title}</h2>
+        <span>{duration}</span>
+      </div>
 
-
-export default function CareerCard({title,duration,dueDate,qualifications,roles}){
-    return(
-        <div className={styles.mainCard}>
-            <div className={styles.innerCard}>
-              <h2>{title}</h2>
-              <h3>{duration}</h3>
-            </div>
-            <div className={styles.listCard}>
-              <h2>Qualifications</h2>
-              <div className={styles.list}>
-                {Array.isArray(qualifications) ? (
-                    <ul>
-                        {qualifications.map((qlctn,index) => (
-                            <li key={index}>{qlctn}</li>
-                        ))}
-                    </ul>
-                ) : (qualifications)}
-              </div>
-            </div>
-            <div className={styles.innerCard}>
-             <h2>Closing: {dueDate}</h2>
-             <Button style={{padding: "5px 5px",background:"#1a2332"}}>Apply</Button>
-            </div>
-            <div className={styles.listCard}>
-            <h2>Roles</h2>
-            <div className={styles.list}>
-            {Array.isArray(roles) ? (
-                    <ul>
-                        {roles.map((rls,index) => (
-                            <li key={index}>{rls}</li>
-                        ))}
-                    </ul>
-                ) : (roles)}              
-            </div>
-            </div>
+      {/* Body */}
+      <div className={styles.body}>
+        <div className={styles.section}>
+          <h3>Qualifications</h3>
+          <ul className={styles.list}>
+            {qualifications.map((q, i) => (
+              <li key={i}>{q}</li>
+            ))}
+          </ul>
         </div>
-    );
+        <div className={styles.section}>
+          <h3>Roles</h3>
+          <ul className={styles.list}>
+            {roles.map((r, i) => (
+              <li key={i}>{r}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className={styles.footer}>
+        <span>Closing: {dueDate}</span>
+        <button className={styles.applyBtn}>Apply</button>
+      </div>
+
+    </div>
+  );
 }

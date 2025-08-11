@@ -1,7 +1,5 @@
 .careersGrid{
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction:column;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 2rem;
     }

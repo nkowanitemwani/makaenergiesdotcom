@@ -20,7 +20,7 @@ export default function TermsPage(){
 
             <h2>1. ACCEPTANCE OF TERMS</h2>
 
-            By accessing and using the Maka Energies Ltd website (the &qout;Website&quot;), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+            By accessing and using the Maka Energies Ltd website (the &quot;Website&quot;), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
 
             <h2>2. COMPANY INFORMATION</h2>
 

@@ -13,6 +13,15 @@ export default function QuoteForm(){
 const [selectedService,setSelectedService] = useState("");
 const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 const [agreedToPrivacy, setAgreedToPrivacy] = useState(false);
+const [isSubmitting,setIsSubmitting] = useState(false);
+
+const [formData, setFormData] = useState({
+  name:"",
+  email: "",
+  phone:"",
+  company:"",
+  message:""
+});
 
 const services = ["Electrical Supplies and Maintenance",
     "Transformer Installations",
@@ -26,43 +35,105 @@ const handleServiceSelect = (service) => {
     setIsDropdownOpen(false);
   };
 
+const handleInputChange = (e) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value
+  });
+};
 
-  const handleSubmit = (e) => {
+
+  const handleSubmit =async (e) => {
     e.preventDefault();
+
     if (!agreedToPrivacy) {
       alert('Please agree to the privacy policy');
       return;
     }
 
+    if(!selectedService){
+      alert("Please select a service");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('../api/sendemail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          service: selectedService
+        }),
+      });
+
+      if (response.ok) {
+        alert('Quote request sent successfully!');
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          message: ''
+        });
+        setSelectedService('');
+        setAgreedToPrivacy(false);
+      } else {
+        throw new Error('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Failed to send quote request. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+
+
+
     // Handle form submission
     console.log('Form submitted');
   };
 
-
-  return (
+return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.formCard}>
-         <div className={styles.form}>
+         <form onSubmit={handleSubmit} className={styles.form}>
             <div className={styles.formTop}>
               <input
                 type="text"
+                name="name"
                 placeholder="Name"
+                value={formData.name}
+                onChange={handleInputChange}
                 required
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Email"
+                value={formData.email}
+                onChange={handleInputChange}
                 required
               />
               <input
                 type="text"
+                name="phone"
                 placeholder="Phone Number"
+                value={formData.phone}
+                onChange={handleInputChange}
                 required
               />
               <input
                 type="text"
+                name="company"
                 placeholder="Company/Organization"
+                value={formData.company}
+                onChange={handleInputChange}
               />
             </div>
 
@@ -95,14 +166,19 @@ const handleServiceSelect = (service) => {
                 </div>
               )}
             </div>
+            
             <div className={styles.messageSection}>
               <textarea
+                name="message"
                 placeholder="leave a detailed description of your project or inquiry..."
+                value={formData.message}
+                onChange={handleInputChange}
                 required
                 rows={6}
                 className={styles.textarea}
-              ></textarea>
+              />
             </div>
+            
             <div className={styles.checkboxSection}>
               <input
                 type="checkbox"
@@ -121,12 +197,14 @@ const handleServiceSelect = (service) => {
                 <span className={styles.required}>*</span>
               </label>
             </div>
+            
             <Button
               type="submit"
+              disabled={isSubmitting}
             >
-              <span>Send</span>
+              <span>{isSubmitting ? 'Sending...' : 'Send'}</span>
             </Button>
-          </div>
+          </form>
         </div>
       </div>
     </div>

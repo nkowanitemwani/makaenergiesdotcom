@@ -16,6 +16,11 @@ export default function AboutPage(){
   const closePolicyCard = () => setPolicyCard(false);
 
 
+  const viewResgistration = () => {
+  window.open("https://drive.google.com/file/d/1PQqzhMcWzgBHm6Dbo-NoVd98rP7z7NM3/view?usp=sharing");
+};
+
+
 
   
     return(
@@ -30,8 +35,9 @@ export default function AboutPage(){
           <section className={styles.policy}>
            <h1>Our Policies</h1>
            <PolicyGrid></PolicyGrid>
-           <Button onClick={openPolicyCard}>Details</Button>
+           <Button onClick={openPolicyCard}>View Policies</Button>
           </section>
+          {policyCard && (<PolicyCard onClose={closePolicyCard}></PolicyCard>) }
           <section className={styles.legal}>
            <h1>Legal Compliance</h1>
            <p>We are fully compliant with</p>
@@ -44,7 +50,7 @@ export default function AboutPage(){
               <li>National Council For Construction: grade 6 category C general engineering works certification.</li>
               <li>Zambia Public Procurement Authority.</li>
             </ol>
-           <Button>View Documents</Button>
+           <Button onClick={viewResgistration}>View Documents</Button>
           </section>
           <section className={styles.future}>
             <h1>Future Strategy</h1>

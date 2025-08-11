@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import styles from "./policycard.module.css"
 import Button from "../../button/page";

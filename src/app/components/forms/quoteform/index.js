@@ -5,7 +5,8 @@ import { useState } from "react";
 import { ChevronDown } from 'lucide-react';
 import styles from "./quoteform.module.css";
 import Button from "../../button";
-
+import Alert from "../../alert";
+import { ThumbsUp,ThumbsDown,BadgeAlert } from "lucide-react";
 
 
 export default function QuoteForm(){
@@ -14,6 +15,8 @@ const [selectedService,setSelectedService] = useState("");
 const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 const [agreedToPrivacy, setAgreedToPrivacy] = useState(false);
 const [isSubmitting,setIsSubmitting] = useState(false);
+const [showAlertSuccess,setShowAlertSuccess] = useState(false);
+const [showAlertFail,setShowAlertFail] = useState(false);
 
 const [formData, setFormData] = useState({
   name:"",
@@ -71,8 +74,7 @@ const handleInputChange = (e) => {
       });
 
       if (response.ok) {
-        alert('Quote request sent successfully!');
-        // Reset form
+        setShowAlertSuccess(true);
         setFormData({
           name: '',
           email: '',
@@ -87,7 +89,7 @@ const handleInputChange = (e) => {
       }
     } catch (error) {
       console.error('Error sending email:', error);
-      alert('Failed to send quote request. Please try again.');
+      setShowAlertFail(true);
     } finally {
       setIsSubmitting(false);
     }
@@ -204,6 +206,20 @@ return (
             >
               <span>{isSubmitting ? 'Sending...' : 'Send'}</span>
             </Button>
+            {showAlertSuccess && (
+            <Alert
+            icon={ThumbsUp}
+            message="Quote request sent successfully!"
+            onClose={() => setShowAlertSuccess(false)}/>
+            )}
+
+          {showAlertFail && (<Alert
+              icon={ThumbsDown}
+              message={"Failed to send quote request. Please try again."}
+              onClose={() => setShowAlertFail(false)}></Alert>
+          )}            
+
+
           </form>
         </div>
       </div>

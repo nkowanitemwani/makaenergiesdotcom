@@ -93,11 +93,7 @@ const handleInputChange = (e) => {
     } finally {
       setIsSubmitting(false);
     }
-
-
-
-    // Handle form submission
-    console.log('Form submitted');
+    
   };
 
 return (

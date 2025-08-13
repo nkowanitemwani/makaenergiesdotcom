@@ -1,0 +1,10 @@
+.infoSection{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.cvInput{
+    height: 8rem;
+}

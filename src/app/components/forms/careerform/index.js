@@ -72,31 +72,49 @@ const handleSubmit = async (e) => {
     }    
 
     setIsSubmitting(true);
-}
+
+    try {
+      const form = new FormData();
+
+      form.append("name",formData.name);
+      form.append("email",formData.email);
+      form.append("phone",formData.phone);
+      form.append("nrc",formData.nrc);
+
+      if(formData.cv){
+         formData.append("cv",formData.cv)
+      }
+
+    const response = await fetch('../api/sendcareerapplication',{
+      method:"POST",
+      body: form
+
+    });
+
+  if (response.ok) {
+    setShowAlertSuccess(true);
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      nrc: "",
+      cv: null
+    });
+    setAgreedToPrivacy(false);
+  }else{
+    throw new Error("Failed to send application")
+  } 
+
+    } catch (error) {
+     console.error('Error sending email:', error);
+      setShowAlertFail(true);      
+    }
+    finally{
+      setIsSubmitting(false);
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+};
 
     return(
         <div className={formStyle.container}>
@@ -104,7 +122,7 @@ const handleSubmit = async (e) => {
           <div className={formStyle.formCard}>
             <form onSubmit={handleSubmit} className={formStyle.form}>
                 <div className={styles.infoSection}>
-                                  <input
+                <input
                 type="text"
                 name="name"
                 placeholder="Name"
@@ -131,7 +149,7 @@ const handleSubmit = async (e) => {
               <input
                 type="text"
                 name="nrc"
-                placeholder="123567/78/9"
+                placeholder="NRC : 123567/78/9"
                 value={formData.nrc}
                 onChange={handleInputChange}
                 maxLength={11}
@@ -144,8 +162,45 @@ const handleSubmit = async (e) => {
                 name="cv"
                 accept="application/pdf"
                 onChange={handleInputChange}
-                required></input>
+                required
+                className={styles.cvInput}></input>   
             </div>
+            <div className={formStyle.checkboxSection}>
+              <input
+                type="checkbox"
+                id="privacy"
+                checked={agreedToPrivacy}
+                onChange={(e) => setAgreedToPrivacy(e.target.checked)}
+                className={formStyle.checkbox}
+                required
+              />
+              <label htmlFor="privacy" className={formStyle.checkboxLabel}>
+                I agree to the{' '}
+                <a href="../policies" className={formStyle.privacyLink}>
+                  Privacy Policy
+                </a>{' '}
+                and consent to being contacted by Maka Energies regarding my inquiry. 
+                <span className={formStyle.required}>*</span>
+              </label>
+            </div>            
+            <Button
+              type="submit"
+              disabled={isSubmitting}
+            > <span>{isSubmitting ? 'Sending...' : 'Send'}</span>
+            </Button>
+            {showAlertSuccess && (
+            <Alert
+            icon={ThumbsUp}
+            message="Application sent successfully!"
+            onClose={() => setShowAlertSuccess(false)}/>
+            )}
+
+          {showAlertFail && (<Alert
+              icon={ThumbsDown}
+              message={"Failed to send Application. Please try again."}
+              onClose={() => setShowAlertFail(false)}></Alert>
+          )}             
+            
             </form>
 
           </div>

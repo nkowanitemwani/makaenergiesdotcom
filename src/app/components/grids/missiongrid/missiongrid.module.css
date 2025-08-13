@@ -1,6 +1,129 @@
-.missionGrid{
-  display: flex;
+.missionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   padding: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+/* Tablet styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .missionGrid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .card {
+    padding: 1.5rem 1rem;
+    min-height: 180px;
+  }
+  
+  .title {
+    font-size: 1.1rem;
+    min-height: 2.4rem;
+  }
+  
+  .subTitle {
+    font-size: 0.9rem;
+  }
+  
+  .subTitle li {
+    font-size: 0.85rem;
+  }
+}
+
+/* Large mobile / small tablet (481px - 768px) */
+@media screen and (max-width: 768px) {
+  .missionGrid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0.5rem;
+  }
+  
+  .card {
+    padding: 1.5rem 1rem;
+    min-height: 170px;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .iconWrapper {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .title {
+    font-size: 1.05rem;
+    min-height: 2.2rem;
+  }
+}
+
+/* Mobile phone styles (up to 480px) */
+@media screen and (max-width: 480px) {
+  .missionGrid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1rem 0.5rem;
+  }
+  
+  .card {
+    padding: 1.25rem 1rem;
+    min-height: 150px;
+    max-width: 100%;
+  }
+  
+  .iconWrapper {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .title {
+    font-size: 1rem;
+    min-height: 2rem;
+    line-height: 1.2;
+  }
+  
+  .subTitle {
+    font-size: 0.85rem;
+  }
+  
+  .subTitle li {
+    font-size: 0.8rem;
+    padding: 0.2rem 0 0.2rem 18px;
+  }
+}
+
+/* Very small screens (up to 320px) */
+@media screen and (max-width: 320px) {
+  .missionGrid {
+    gap: 1rem;
+    padding: 0.75rem 0.25rem;
+  }
+  
+  .card {
+    padding: 1rem 0.75rem;
+    min-height: 140px;
+  }
+  
+  .title {
+    font-size: 0.95rem;
+    min-height: 1.8rem;
+  }
+  
+  .subTitle {
+    font-size: 0.8rem;
+  }
 }

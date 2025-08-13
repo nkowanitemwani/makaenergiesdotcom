@@ -1,6 +1,4 @@
-.history p{
-  font-size: 1.25rem;
-}
+
 
 .history span {
     color: #ff6b35;
@@ -35,8 +33,4 @@
   position: absolute;
   left: 0;
   color: #ff6b35;
-}
-
-.future p{
-  font-size: 1.25rem;
 }

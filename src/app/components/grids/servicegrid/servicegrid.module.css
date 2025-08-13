@@ -1,9 +1,46 @@
-.serviceGrid{
+.serviceGrid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     justify-items: center;
-    align-items: center;
-    padding: 50px;
-    /* background: #1a2332; */
+    align-items: stretch;
+    padding: 3rem 2rem;
+    background-color: #f8f9fb;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tablet (2 columns) */
+@media screen and (max-width: 1024px) {
+    .serviceGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75rem;
+        padding: 2.5rem 1.5rem;
+        max-width: 800px;
+    }
+}
+
+/* Large mobile (1 column, bigger tap area) */
+@media screen and (max-width: 768px) {
+    .serviceGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+}
+
+/* Small mobile */
+@media screen and (max-width: 480px) {
+    .serviceGrid {
+        gap: 1.25rem;
+        padding: 1.5rem 0.75rem;
+    }
+}
+
+/* Very small screens */
+@media screen and (max-width: 320px) {
+    .serviceGrid {
+        gap: 1rem;
+        padding: 1rem 0.5rem;
+    }
 }

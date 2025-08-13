@@ -1,4 +1,4 @@
-.container{
+.container {
     padding: 50px;
     width: 800px;
     height: fit-content;
@@ -6,21 +6,42 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-.container h1{
+.container h1 {
     font-size: 1.5rem;
     padding: 1rem 1rem;
 }
 
-.container h2{
+.container h2 {
     font-size: 1.25rem;
     font-weight: 500;
     padding: 1rem 1rem;
 }
 
-.container h3{
+.container h3 {
     font-size: 1.25rem;
     font-weight: 500;
     padding: 1rem 1rem;
 }
 
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 40px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+    .container h1 {
+        font-size: 1.3rem;
+    }
+    .container h2,
+    .container h3 {
+        font-size: 1.1rem;
+    }
+}

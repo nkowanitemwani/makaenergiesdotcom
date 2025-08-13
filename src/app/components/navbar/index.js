@@ -25,16 +25,16 @@ export default function HomeNav ({...props}){
                     
                     {/* Desktop/Tablet Navigation Links */}
                     <div className={styles.navbarLinks}>
-                        <Link href="../pages/about">About</Link>
-                        <Link href="../pages/services">Services</Link>
-                        <Link href="../pages/contact">Contact</Link>
-                        <Link href="../pages/team">Our Team</Link>
-                        <Link href="../pages/careers">Careers</Link>
+                        <Link href="/about">About</Link>
+                        <Link href="/services">Services</Link>
+                        <Link href="/contact">Contact</Link>
+                        <Link href="/team">Our Team</Link>
+                        <Link href="/careers">Careers</Link>
                     </div>
                     
                     {/* Desktop/Tablet Get Quote Button */}
                     <div className={styles.navRight}>
-                        <Button href="../pages/contact#quote" style={{padding : "5px 50px"}}>
+                        <Button href="/contact#quote" style={{padding : "5px 50px"}}>
                             Get A Quote
                         </Button>
                     </div>
@@ -53,14 +53,14 @@ export default function HomeNav ({...props}){
                 <button className={styles.closeButton} onClick={closeMobileMenu}>
                     &times;
                 </button>
-                <Link href="../pages/about" onClick={closeMobileMenu}>About</Link>
-                <Link href="../pages/services" onClick={closeMobileMenu}>Services</Link>
-                <Link href="../pages/contact" onClick={closeMobileMenu}>Contact</Link>
-                <Link href="../pages/team" onClick={closeMobileMenu}>Our Team</Link>
-                <Link href="../pages/careers" onClick={closeMobileMenu}>Careers</Link>
+                <Link href="/about" onClick={closeMobileMenu}>About</Link>
+                <Link href="/services" onClick={closeMobileMenu}>Services</Link>
+                <Link href="/contact" onClick={closeMobileMenu}>Contact</Link>
+                <Link href="/team" onClick={closeMobileMenu}>Our Team</Link>
+                <Link href="/careers" onClick={closeMobileMenu}>Careers</Link>
                 <div style={{marginTop: '1rem'}}>
                     <Button 
-                        href="../pages/contact#quote" 
+                        href="/contact#quote" 
                         style={{padding : "10px 40px"}}
                         onClick={closeMobileMenu}
                     >

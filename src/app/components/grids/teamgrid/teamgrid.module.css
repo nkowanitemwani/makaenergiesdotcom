@@ -1,9 +1,48 @@
-.teamGrid{
+/* Team Grid CSS - teamgrid.module.css */
+.teamGrid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     justify-items: center;
     align-items: center;
     padding: 50px;
-    /* background: #1a2332; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tablet styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .teamGrid {
+        padding: 40px;
+        gap: 1.5rem;
+    }
+}
+
+/* Large mobile / small tablet (481px - 768px) */
+@media screen and (max-width: 768px) {
+    .teamGrid {
+        grid-template-columns: repeat(2, 1fr); /* Keep 2 columns */
+        padding: 30px 20px;
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile phone styles (up to 480px) */
+@media screen and (max-width: 480px) {
+    .teamGrid {
+        grid-template-columns: 1fr; /* Switch to single column */
+        padding: 20px 15px;
+        gap: 1.25rem;
+        max-width: 200px; /* Center single column cards */
+        margin: 0 auto;
+    }
+}
+
+/* Very small screens (up to 320px) */
+@media screen and (max-width: 320px) {
+    .teamGrid {
+        padding: 15px 10px;
+        gap: 1rem;
+        max-width: 160px; /* Adjust for smaller cards */
+    }
 }

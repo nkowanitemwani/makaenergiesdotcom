@@ -20,7 +20,7 @@ export default function ApplyPage(){
             <HomeNav style={{background : "#1a2332"}}></HomeNav>
             <section>
                 <h1>Maka Energies Career Form</h1>
-                <h2>{jobTitle} Position</h2>
+                <p>{jobTitle} Position</p>
                 <CareerForm></CareerForm>
             </section>
             <Footer></Footer>

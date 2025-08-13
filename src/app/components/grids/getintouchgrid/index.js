@@ -14,12 +14,12 @@ const contacts = [
     {
        icon: Mail,
        title:"Send An Email To",
-       subTitle:["mwenzoenergeysolutions@gmail.com","omicronelectricals@gmail.com"]
+       subTitle:["omicronelectricals@gmail.com"]
     },
     {
         icon: Map,
         title: "Visit Us At",
-        subTitle: "Plot No. 68 Umulu Kalulushi-District"
+        subTitle:["Plot No. 68 Umulu Kalulushi-District"]
     }
 ];
 

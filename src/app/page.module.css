@@ -1,4 +1,5 @@
-.hero{
+/* HERO SECTION STYLES */
+.hero {
   display: flex;
   flex-direction: column;
   background: url("/images/maka2.jpg");
@@ -6,50 +7,258 @@
   background-color: rgba(2, 12, 52, 0.5);
   background-blend-mode: overlay;
   background-size: cover;
-  height: 70vh;
+  background-attachment: fixed; /* Parallax effect on desktop */
+  height: 100vh; /* Full viewport height for impact */
   padding: 0;
   align-items: initial;
   justify-content: initial;
-  
+  position: relative;
+  overflow: hidden;
 }
 
-.heroContainer{
+.heroContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  flex-grow: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.heroInfo{
+.heroInfo {
   text-align: center;
+  margin-bottom: 3rem;
+  animation: fadeInUp 0.8s ease-out;
 }
 
-.heroInfo h1{
+.heroInfo h1 {
   color: #f8f9fb;
   font-weight: 900;
-}
-.heroInfo p{
-  color: #f8f9fb;
+  font-size: clamp(2.5rem, 5vw, 4.5rem); /* Fluid typography */
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.heroCtas{
-  margin-top: 50px;
+.heroInfo p {
+  color: #f8f9fb;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 400;
+  opacity: 0.95;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.heroCtas {
   display: flex;
-  justify-content: space-between;
-  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 
-
-.who p{
-  font-size: 1.25rem;
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-
-.work{
-  background: #1a2332;
+/* DESKTOP STYLES (1200px+) */
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 100vh;
+  }
+  
+  .heroContainer {
+    padding: 3rem;
+  }
+  
+  .heroCtas {
+    gap: 2.5rem;
+  }
 }
 
-.work h1{
-  color: #f8f9fb;
+/* TABLET STYLES (768px - 1199px) */
+@media screen and (max-width: 1199px) {
+  .hero {
+    height: 85vh;
+    background-attachment: scroll; /* Better performance on tablets */
+  }
+  
+  .heroContainer {
+    padding: 2rem 1.5rem;
+  }
+  
+  .heroInfo {
+    margin-bottom: 2.5rem;
+  }
+  
+  .heroInfo h1 {
+    font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  }
+  
+  .heroInfo p {
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  }
+  
+  .heroCtas {
+    gap: 1.5rem;
+  }
+}
+
+/* LARGE MOBILE / SMALL TABLET (481px - 767px) */
+@media screen and (max-width: 767px) {
+  .hero {
+    height: 80vh;
+    background-attachment: scroll;
+    background-position: center center;
+  }
+  
+  .heroContainer {
+    padding: 1.5rem 1rem;
+    justify-content: center;
+  }
+  
+  .heroInfo {
+    margin-bottom: 2rem;
+  }
+  
+  .heroInfo h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    line-height: 1.3;
+  }
+  
+  .heroInfo p {
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    line-height: 1.4;
+  }
+  
+  .heroCtas {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .heroCtas > * {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+
+/* MOBILE PHONE STYLES (320px - 480px) */
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 75vh;
+    min-height: 600px; /* Minimum height for very small screens */
+  }
+  
+  .heroContainer {
+    padding: 1rem 0.75rem;
+    min-height: calc(75vh - 60px); /* Account for navbar */
+  }
+  
+  .heroInfo {
+    margin-bottom: 1.5rem;
+  }
+  
+  .heroInfo h1 {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .heroInfo p {
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+    line-height: 1.4;
+  }
+  
+  .heroCtas {
+    gap: 0.75rem;
+    padding: 0 0.5rem;
+  }
+  
+  .heroCtas > * {
+    min-height: 48px; /* Touch-friendly buttons */
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+}
+
+/* VERY SMALL SCREENS (up to 320px) */
+@media screen and (max-width: 320px) {
+  .hero {
+    height: 70vh;
+    min-height: 500px;
+  }
+  
+  .heroContainer {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .heroInfo h1 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+  
+  .heroInfo p {
+    font-size: 0.9rem;
+  }
+  
+  .heroCtas {
+    padding: 0;
+  }
+}
+
+/* HIGH-DPI DISPLAYS */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/maka2@2x.jpg"); /* High-res version if available */
+  }
+}
+
+/* LANDSCAPE ORIENTATION ON MOBILE */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    height: 100vh;
+  }
+  
+  .heroContainer {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .heroInfo {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  
+  .heroCtas {
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+}
+
+/* REDUCE MOTION FOR ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  .heroInfo,
+  .heroCtas {
+    animation: none;
+  }
+  
+  .hero {
+    background-attachment: scroll;
+  }
 }

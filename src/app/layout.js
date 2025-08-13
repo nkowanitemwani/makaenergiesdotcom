@@ -21,6 +21,9 @@ const inter = Inter({
 export const metadata = {
   title: "Maka Energies Limited",
   description: "Corporate Website For Maka Energies Limited",
+  icons:{
+    icon:"/images/makafav.png"
+  }
 };
 
 export default function RootLayout({ children }) {

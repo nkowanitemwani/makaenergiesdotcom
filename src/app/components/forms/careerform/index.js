@@ -82,10 +82,10 @@ const handleSubmit = async (e) => {
       form.append("nrc",formData.nrc);
 
       if(formData.cv){
-         formData.append("cv",formData.cv)
+         form.append("cv",formData.cv)
       }
 
-    const response = await fetch('../api/sendcareerapplication',{
+    const response = await fetch('../api/sendapplication',{
       method:"POST",
       body: form
 

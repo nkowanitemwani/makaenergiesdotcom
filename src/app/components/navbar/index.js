@@ -8,17 +8,17 @@ export default function HomeNav ({...props}){
       <header {...props}>
         <nav className={styles.navbar}>
             <div className={styles.navbarLinks}>
-              <Link href="../" className={styles.navbarLinksTitle}>Maka Engergies</Link>
+              <Link href="./" className={styles.navbarLinksTitle}>Maka Engergies</Link>
             </div>
             <div className={styles.navbarLinks}>
-                <Link href="../pages/about">About</Link>
-                <Link href="../pages/services">Services</Link>
-                <Link href="../pages/contact">Contact</Link>
-                <Link href="../pages/team">Our Team</Link>
-                <Link href="../pages/careers">Careers</Link>
+                <Link href="/about">About</Link>
+                <Link href="/services">Services</Link>
+                <Link href="/contact">Contact</Link>
+                <Link href="/team">Our Team</Link>
+                <Link href="/careers">Careers</Link>
             </div>
             <div className={styles.navRight}>
-            <Button href="../pages/contact#quote" style={{padding : "5px 50px"}}>Get A Quote</Button>
+            <Button href="/contact#quote" style={{padding : "5px 50px"}}>Get A Quote</Button>
             </div>
           </nav>
       </header>

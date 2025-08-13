@@ -93,11 +93,7 @@ const handleInputChange = (e) => {
     } finally {
       setIsSubmitting(false);
     }
-
-
-
-    // Handle form submission
-    console.log('Form submitted');
+    
   };
 
 return (
@@ -192,7 +188,7 @@ return (
               />
               <label htmlFor="privacy" className={styles.checkboxLabel}>
                 I agree to the{' '}
-                <a href="../pages/policies" className={styles.privacyLink}>
+                <a href="./policies" className={styles.privacyLink}>
                   Privacy Policy
                 </a>{' '}
                 and consent to being contacted by Maka Energies regarding my inquiry. 

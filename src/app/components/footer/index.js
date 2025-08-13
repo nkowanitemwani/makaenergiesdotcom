@@ -10,18 +10,18 @@ export default function Footer(){
            <div className={styles.footerInfoImage}>
             </div>
             <div className={styles.footerInfoLeftText}>
-             <Link href="../" ><h1>Maka Engergies</h1></Link>
+             <Link href="./" ><h1>Maka Engergies</h1></Link>
              <p>Powering Zambia With Reliable Engergy Solutions</p>      
             </div>
            </div>
           <div className={styles.footerInfoCenter}>
             <h3>Navigation</h3>
             <ul>
-              <li><Link href="../pages/about">About</Link></li>
-              <li><Link href="../pages/services">Services</Link></li>
-              <li><Link href="../pages/contact">Contact</Link></li>
-              <li><Link href="../pages/team">Our Team</Link></li>
-              <li><Link href="../pages/careers">Careers</Link></li>    
+              <li><Link href="/about">About</Link></li>
+              <li><Link href="/services">Services</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/team">Our Team</Link></li>
+              <li><Link href="/careers">Careers</Link></li>    
             </ul>
            </div>
           <div className={styles.footerInfoRight}>
@@ -35,7 +35,7 @@ export default function Footer(){
           </div>
         </div>
         <div className={styles.termsPolicies}>
-          <span><Link href="../pages/terms">Terms Of Use</Link>{"|"}<Link href="../pages/policies">Privacy Policy</Link></span>
+          <span><Link href="/terms">Terms Of Use</Link>{"|"}<Link href="/policies">Privacy Policy</Link></span>
         </div>
         <hr></hr>
         <p className={styles.footerText}>© 2025 Maka Engergies Ltd. All rights reserved</p>

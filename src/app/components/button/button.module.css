@@ -1,15 +1,132 @@
 .hplcCta {
   background: #ff6b35;
   color: #f8f9fb;
-  padding: 0.5rem 0.5rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   text-align: center;
   border: none;
+  transition: all 0.3s ease;
+  min-height: 44px; /* Touch-friendly minimum */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .hplcCta:hover {
-  border: 2px solid #f8f9fb;
+  background: #e55a2b;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.hplcCta:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(255, 107, 53, 0.3);
+}
+
+.hplcCta:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.hplcCta:disabled:hover {
+  background: #ccc;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Button variants */
+.secondary {
+  background: transparent;
+  color: #ff6b35;
+  border: 2px solid #ff6b35;
+}
+
+.secondary:hover {
+  background: #ff6b35;
+  color: #f8f9fb;
+}
+
+.outline {
+  background: transparent;
+  color: #1a2332;
+  border: 2px solid #1a2332;
+}
+
+.outline:hover {
+  background: #1a2332;
+  color: #f8f9fb;
+}
+
+/* Tablet styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .hplcCta {
+    font-size: 16px;
+    padding: 0.65rem 1.25rem;
+    min-height: 42px;
+  }
+}
+
+/* Large mobile / small tablet (481px - 768px) */
+@media screen and (max-width: 768px) {
+  .hplcCta {
+    font-size: 16px;
+    padding: 0.75rem 1rem;
+    min-height: 44px;
+    white-space: normal; /* Allow text wrapping on smaller screens */
+    line-height: 1.2;
+  }
+  
+  /* Full-width buttons for mobile forms */
+  .fullWidth {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Mobile phone styles (up to 480px) */
+@media screen and (max-width: 480px) {
+  .hplcCta {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 0.875rem 1rem;
+    min-height: 48px; /* Better touch target */
+    border-radius: 6px;
+  }
+  
+  /* Navbar specific button sizing */
+  .navButton {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    min-height: 40px;
+  }
+  
+  /* Large CTA buttons */
+  .large {
+    padding: 1rem 1.5rem;
+    font-size: 18px;
+    min-height: 52px;
+  }
+}
+
+/* Very small screens (up to 320px) */
+@media screen and (max-width: 320px) {
+  .hplcCta {
+    font-size: 14px;
+    padding: 0.75rem 0.75rem;
+    min-height: 44px;
+  }
+  
+  .large {
+    padding: 0.875rem 1rem;
+    font-size: 16px;
+    min-height: 48px;
+  }
 }

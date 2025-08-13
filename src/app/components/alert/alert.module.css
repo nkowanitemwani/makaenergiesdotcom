@@ -10,44 +10,265 @@
     justify-content: center;
     z-index: 1000;
     backdrop-filter: blur(4px);
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .main {
-    height: fit-content;
-    width: fit-content;
+    width: 100%;
+    max-width: 500px;
     background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .container {
     width: 100%;
-    height: 100%;
-    padding: 2rem;
-    border-radius: 6px;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
     background: #f8f9fb;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
+    justify-content: center;
+    gap: 1.5rem;
     position: relative;
+    text-align: center;
+    min-width: 300px;
+    animation: alertFadeIn 0.3s ease-out;
 }
 
+@keyframes alertFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
 
 .iconWrapper {
-  width: 60px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin-bottom: 8px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 107, 53, 0.1);
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    flex-shrink: 0;
 }
 
 .icon {
-  color: #ff6b35;
+    color: #ff6b35;
+    width: 36px;
+    height: 36px;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a2332;
+    margin: 0;
+    line-height: 1.3;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+/* Close button positioned at top-right */
+.closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.closeButton:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Tablet styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .main {
+        max-width: 450px;
+    }
+    
+    .container {
+        padding: 2rem 1.5rem;
+        min-width: 280px;
+    }
+    
+    .container h2 {
+        font-size: 1.35rem;
+    }
+    
+    .iconWrapper {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Large mobile / small tablet (481px - 768px) */
+@media screen and (max-width: 768px) {
+    .overlay {
+        padding: 1rem 0.75rem;
+    }
+    
+    .main {
+        max-width: 400px;
+    }
+    
+    .container {
+        padding: 2rem 1.25rem;
+        min-width: 260px;
+        border-radius: 10px;
+        gap: 1.25rem;
+    }
+    
+    .container h2 {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+    
+    .iconWrapper {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .closeButton {
+        top: 0.75rem;
+        right: 0.75rem;
+        font-size: 1.25rem;
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Mobile phone styles (up to 480px) */
+@media screen and (max-width: 480px) {
+    .overlay {
+        padding: 0.75rem 0.5rem;
+        align-items: flex-start;
+        padding-top: 10vh; /* Position alert higher on screen */
+    }
+    
+    .main {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .container {
+        padding: 1.75rem 1rem;
+        min-width: auto;
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+        border-radius: 8px;
+        gap: 1rem;
+    }
+    
+    .container h2 {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+    
+    .iconWrapper {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .icon {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .closeButton {
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 1.125rem;
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/* Very small screens (up to 320px) */
+@media screen and (max-width: 320px) {
+    .overlay {
+        padding: 0.5rem 0.25rem;
+        padding-top: 8vh;
+    }
+    
+    .container {
+        padding: 1.5rem 0.75rem;
+        max-width: 100%;
+        border-radius: 6px;
+    }
+    
+    .container h2 {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+    
+    .iconWrapper {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Animation for mobile - reduced motion on small screens */
+@media screen and (max-width: 480px) {
+    @keyframes alertFadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* Accessibility - respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .container {
+        animation: none;
+    }
+    
+    .closeButton {
+        transition: none;
+    }
 }

@@ -16,7 +16,7 @@ export default function CareerCard({
 
   const handleApply = () => {
     const slug = slugify(title);
-    router.push(`./apply/${slug}`)
+    router.push(`/apply/${slug}`)
   }
 
 

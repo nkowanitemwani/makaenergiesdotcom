@@ -25,8 +25,8 @@ const viewCertificates = () => {
             <p>Electrical,Civil,Mechanical & Supply Services</p>
           </div>
           <div className={styles.heroCtas}>
-            <Button href="../pages/contact#quote" style={{padding : "0 3rem"}}>Get A Quote</Button>
-            <Button href="../pages/contact" style={{background : "#1e2a3a"}}>Contact Us</Button>
+            <Button href="/contact#quote" style={{padding : "0 3rem"}}>Get A Quote</Button>
+            <Button href="/contact" style={{background : "#1e2a3a"}}>Contact Us</Button>
           </div>
           </div>
         </section>

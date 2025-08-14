@@ -17,7 +17,7 @@ export default function AboutPage(){
 
 
   const viewResgistration = () => {
-  window.open("https://drive.google.com/file/d/1PQqzhMcWzgBHm6Dbo-NoVd98rP7z7NM3/view?usp=sharing");
+  window.open("https://drive.google.com/file/d/1PQqzhMcWzgBHm6Dbo-NoVd98rP7z7NM3/view?usp=drive_link","_blank");
 };
 
 

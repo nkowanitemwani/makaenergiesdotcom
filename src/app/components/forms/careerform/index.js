@@ -80,6 +80,7 @@ const handleSubmit = async (e) => {
       form.append("email",formData.email);
       form.append("phone",formData.phone);
       form.append("nrc",formData.nrc);
+      form.append("address",formData.address);
 
       if(formData.cv){
          form.append("cv",formData.cv)
@@ -98,6 +99,7 @@ const handleSubmit = async (e) => {
       email: "",
       phone: "",
       nrc: "",
+      address:"",
       cv: null
     });
     setAgreedToPrivacy(false);
@@ -153,6 +155,14 @@ const handleSubmit = async (e) => {
                 value={formData.nrc}
                 onChange={handleInputChange}
                 maxLength={11}
+              />
+              <input
+                type="text"
+                name="address"
+                placeholder="Address"
+                value={formData.address}
+                onChange={handleInputChange}
+                required
               />
                 </div>
 

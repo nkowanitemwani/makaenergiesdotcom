@@ -8,6 +8,7 @@ export async function POST(request){
         const email = formData.get("email");
         const phone = formData.get("phone");
         const nrc = formData.get("nrc");
+        const address = formData.get("address");
         const cv = formData.get("cv");
 
 
@@ -54,6 +55,7 @@ export async function POST(request){
                 <p style="color: #1a2332; margin: 8px 0;"><strong style="color: #ff6b35;">Email:</strong> ${email}</p>
                 <p style="color: #1a2332; margin: 8px 0;"><strong style="color: #ff6b35;">Phone:</strong> ${phone}</p>
                 <p style="color: #1a2332; margin: 8px 0;"><strong style="color: #ff6b35;">NRC:</strong> ${nrc}</p>
+                <p style="color: #1a2332; margin: 8px 0;"><strong style="color: #ff6b35;">NRC:</strong> ${address}</p>
             </div>
             
             <div style="background-color: #ffffff; padding: 25px; border-left: 4px solid #1a2332;">

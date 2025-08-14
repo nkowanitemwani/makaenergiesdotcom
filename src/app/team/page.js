@@ -10,7 +10,7 @@ export default function TeamPage(){
           <section>
             <h1>Meet The Maka Energies Team</h1>
             <p>Our leadership team represents a powerful combination of academic excellence, practical industry experience, 
-              and entrepreneurial vision. With collective decades of experience in Zambia's electrical utilities sector, 
+              and entrepreneurial vision. With collective decades of experience in Zambia&apos;s electrical utilities sector, 
               our directors bring deep technical knowledge and proven track records from their tenure with ZESCO and other leading organizations.</p>
             <TeamGrid></TeamGrid>
           </section>

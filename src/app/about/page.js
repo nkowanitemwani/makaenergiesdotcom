@@ -54,7 +54,7 @@ export default function AboutPage(){
           </section>
           <section className={styles.future}>
             <h1>Our Vision For Growth</h1>
-            <p>We're positioning ourselves to become one of the main suppliers on the Copperbelt and across Zambia's provinces. Our future strategy includes expanding our services nationally and building international relationships with neighboring countries including South Africa, Tanzania, and Democratic Republic of Congo.</p>
+            <p>We&apos;re positioning ourselves to become one of the main suppliers on the Copperbelt and across Zambia&apos;s provinces. Our future strategy includes expanding our services nationally and building international relationships with neighboring countries including South Africa, Tanzania, and Democratic Republic of Congo.</p>
           </section>
           <Footer></Footer>
 

@@ -53,9 +53,8 @@ export default function AboutPage(){
            <Button onClick={viewResgistration}>View Documents</Button>
           </section>
           <section className={styles.future}>
-            <h1>Future Strategy</h1>
-            <p>The company plans to succeed and position itself as one of the main suppliers on the Copperbelt 
-            and other provinces and institutions in Zambia. With the ultimate goal of ... </p>
+            <h1>Our Vision For Growth</h1>
+            <p>We're positioning ourselves to become one of the main suppliers on the Copperbelt and across Zambia's provinces. Our future strategy includes expanding our services nationally and building international relationships with neighboring countries including South Africa, Tanzania, and Democratic Republic of Congo.</p>
           </section>
           <Footer></Footer>
 

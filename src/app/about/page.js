@@ -8,6 +8,7 @@ import Footer from "@/app/components/footer";
 import PolicyGrid from "@/app/components/grids/policygrid";
 import Button from "@/app/components/button";
 import PolicyCard from "@/app/components/cards/policycard";
+import Head from "next/head";
 
 export default function AboutPage(){
 
@@ -24,6 +25,12 @@ export default function AboutPage(){
 
   
     return(
+     <>
+    <Head>
+      <title>About Us - Maka Energies Limited</title>
+      <meta name="description" content="Learn about Maka Energies Limited's history , policies, compliance and future strategy" />
+    </Head>
+
         <main>
           <HomeNav style={{background : "#1a2332"}}></HomeNav>
           <section className={styles.history}>
@@ -61,6 +68,7 @@ export default function AboutPage(){
 
           {/* {policyCard && (<PolicyCard></PolicyCard>)} */}
         </main>
+     </>
 
     );
 }

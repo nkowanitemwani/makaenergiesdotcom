@@ -2,11 +2,16 @@ import React from "react";
 import styles from "./services.module.css";
 import HomeNav from "@/app/components/navbar";
 import Footer from "@/app/components/footer";
-import PolicyCard from "@/app/components/cards/policycard";
 import ServiceGrid from "@/app/components/grids/servicegrid";
+import Head from "next/head";
 
 export default function ServicesPage(){
     return(
+        <>
+       <Head>
+      <title>Team - Maka Energies Limited</title>
+      <meta name="team" content="Maka Energies Limited leadership team and founding members" />
+       </Head>
         <main>
           <HomeNav style={{background : "#1a2332"}}></HomeNav>
           <section className={styles.service}>
@@ -23,5 +28,6 @@ export default function ServicesPage(){
           <ServiceGrid></ServiceGrid>
           <Footer></Footer>
         </main>
+        </>
     );
 }

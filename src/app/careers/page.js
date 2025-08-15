@@ -4,9 +4,15 @@ import Footer from "@/app/components/footer";
 import CareersGrid from "@/app/components/grids/careersgrid";
 import InfoCard from "../components/cards/infocard";
 import { StopCircle } from "lucide-react";
+import Head from "next/head";
 
 export default function CareersPage(){
     return(
+        <>
+       <Head>
+      <title>Careers - Maka Energies Limited</title>
+      <meta name="careers" content="Potential career oppurtunities from Maka Energies Limited" />
+       </Head>
         <main>
         <HomeNav style={{background : "#1a2332"}}></HomeNav>
         <section>
@@ -26,5 +32,6 @@ export default function CareersPage(){
         </section>
         <Footer></Footer>
         </main>
+        </>
     );
 }

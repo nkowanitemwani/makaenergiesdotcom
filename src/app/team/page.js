@@ -5,6 +5,11 @@ import TeamGrid from "@/app/components/grids/teamgrid";
 
 export default function TeamPage(){
     return(
+        <>
+               <Head>
+      <title>Contact - Maka Energies Limited</title>
+      <meta name="contact" content="Get in touch with Maka Energies Limited's via phone , email or quote" />
+       </Head>
         <main>
           <HomeNav style={{background : "#1a2332"}}></HomeNav>
           <section>
@@ -16,5 +21,6 @@ export default function TeamPage(){
           </section>
           <Footer></Footer>
         </main>
+        </>
     );
 }

@@ -5,10 +5,16 @@ import HomeNav from "@/app/components/navbar";
 import Footer from "@/app/components/footer";
 import ContactCards from "@/app/components/grids/contactcardgrid";
 import QuoteForm from "@/app/components/forms/quoteform";
+import Head from "next/head";
 
 
 export default function ContactPage(){
     return(
+        <>
+        <Head>
+      <title>Contact - Maka Energies Limited</title>
+      <meta name="contact" content="Get in touch with Maka Energies Limited's via phone , email or quote" />
+       </Head>
         <main>
           <HomeNav style={{background : "#1a2332"}}></HomeNav>
           <section>
@@ -23,6 +29,7 @@ export default function ContactPage(){
           </section>
           <Footer></Footer>
         </main>
+        </>
     );
 
 }

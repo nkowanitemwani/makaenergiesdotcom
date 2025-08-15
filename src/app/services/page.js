@@ -9,8 +9,8 @@ export default function ServicesPage(){
     return(
         <>
        <Head>
-      <title>Team - Maka Energies Limited</title>
-      <meta name="team" content="Maka Energies Limited leadership team and founding members" />
+      <title>Services - Maka Energies Limited</title>
+      <meta name="services" content="Services provided by Maka Energies Limited" />
        </Head>
         <main>
           <HomeNav style={{background : "#1a2332"}}></HomeNav>

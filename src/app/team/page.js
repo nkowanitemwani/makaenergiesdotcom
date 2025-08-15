@@ -2,9 +2,15 @@ import React from "react";
 import HomeNav from "@/app/components/navbar";
 import Footer from "@/app/components/footer";
 import TeamGrid from "@/app/components/grids/teamgrid";
+import Head from "next/head";
 
 export default function TeamPage(){
     return(
+        <>
+      <Head>
+      <title>Team - Maka Energies Limited</title>
+      <meta name="team" content="meet the Maka Energies Limited leadership team and founding members" />
+       </Head>
         <main>
           <HomeNav style={{background : "#1a2332"}}></HomeNav>
           <section>
@@ -16,5 +22,6 @@ export default function TeamPage(){
           </section>
           <Footer></Footer>
         </main>
+        </>
     );
 }

@@ -7,6 +7,7 @@ import MissionGrid from "./components/grids/missiongrid";
 import WorksGrid from "./components/grids/worksgrid/page";
 import GetInTocuh from "./components/grids/getintouchgrid";
 import Footer from "./components/footer";
+import Head from "next/head";
 
 export default function Home() {
 
@@ -15,8 +16,39 @@ const viewCertificates = () => {
 };
 
 
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Maka Energies Limited",
+    "url": "https://makaenergiesdotcom.vercel.app/",
+    "description": "Energy solutions provider in Zambia",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Plot Number 68 Umulu",
+      "addressLocality": "Kalulushi",
+      "addressCountry": "ZM"
+    },
+    "telephone" : ["+260 966 787 930",
+                  "+260 955 432 663",
+                  "+260 955 881 931"
+    ],
+    "email": "omicronelectricals@gmail.com"
+  }
+
+
   return (
-      <main>
+    <>
+     <Head>
+        <title>Maka Energies Limited - Energy Solutions</title>
+        <meta name="description" content="Maka Energies Limited provides comprehensive energy solutions and services..." />
+        <meta name="keywords" content="Maka Energies, energy solutions, power generation" />
+        <link rel="canonical" href="https://makaenergiesdotcom.vercel.app/" />
+        <script 
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </Head>
+          <main>
         <section className={styles.hero}>
           <HomeNav></HomeNav>
           <div className={styles.heroContainer}>
@@ -53,5 +85,6 @@ const viewCertificates = () => {
         <Footer></Footer>
         
       </main>
+    </>
   );
 }

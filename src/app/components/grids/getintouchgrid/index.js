@@ -14,7 +14,7 @@ const contacts = [
     {
        icon: Mail,
        title:"Send An Email To",
-       subTitle:["omicronelectricals@gmail.com"]
+       subTitle:["makaenergies@gmail.com"]
     },
     {
         icon: Map,

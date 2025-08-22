@@ -30,7 +30,7 @@ export default function Footer(){
               <li>+260 966 787 930 </li>
               <li>+260 955 432 663</li>
               <li>+269 955 881 931</li>
-              <li>omicronelectricals@gmail.com</li>
+              <li>makaenergies@gmail.com</li>
               <li>Plot No. 68 Umulu Kalulushi-District</li>
             </ul>
           </div>

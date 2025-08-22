@@ -32,7 +32,7 @@ const viewCertificates = () => {
                   "+260 955 432 663",
                   "+260 955 881 931"
     ],
-    "email": "omicronelectricals@gmail.com"
+    "email": "makaenergies@gmail.com"
   }
 
 

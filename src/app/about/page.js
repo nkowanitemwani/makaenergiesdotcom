@@ -50,7 +50,7 @@ export default function AboutPage(){
            <p>We are fully compliant with</p>
             <ol>
               <li>PACRA: registered as PRIVATE COMPANY LIMITED BY SHARES.</li>
-              <li>Zambia Revenue Authority: certification for general tax clearance and value added value added tax account registration.</li>
+              <li>Zambia Revenue Authority: certification for general tax clearance and value added tax account registration.</li>
               <li>National Pension Scheme Authority.</li>
               <li>Workers Compensation Fund.</li>
               <li>Engineering Registration Board: registered as an engineering organisation and authorised to practice engineering in Zambia.</li>

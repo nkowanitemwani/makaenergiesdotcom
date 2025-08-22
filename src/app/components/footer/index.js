@@ -10,7 +10,7 @@ export default function Footer(){
            <div className={styles.footerInfoImage}>
             </div>
             <div className={styles.footerInfoLeftText}>
-             <Link href="./" ><h1>Maka Engergies</h1></Link>
+             <Link href="./" ><h1>Maka Energies</h1></Link>
              <p>Powering Zambia With Reliable Engergy Solutions</p>      
             </div>
            </div>
@@ -39,7 +39,7 @@ export default function Footer(){
           <span><Link href="/terms">Terms Of Use</Link>{"|"}<Link href="/policies">Privacy Policy</Link></span>
         </div>
         <hr></hr>
-        <p className={styles.footerText}>© 2025 Maka Engergies Ltd. All rights reserved</p>
+        <p className={styles.footerText}>© 2025 Maka Energies Ltd. All rights reserved</p>
       </footer>
   );
 }

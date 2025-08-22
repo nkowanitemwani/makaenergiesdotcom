@@ -35,9 +35,9 @@ export default function AboutPage(){
           <HomeNav style={{background : "#1a2332"}}></HomeNav>
           <section className={styles.history}>
             <h1>Company History</h1>
-            <p>MAKA ENERGIES LIMITED was registered on the 25th of january,2023 in Zambia by the registrar of companies. With the aim of providing quality goods and services to to both local and international clients.
+            <p>MAKA ENERGIES LIMITED was registered on the 25th of january,2023 in Zambia by the registrar of companies. With the aim of providing quality goods and services to both local and international clients.
               Since then we have made steady progress in various sectors of the economy, venturing into electrical and mechanical engineering, civil construction and the 
-              supply of varios goods,currently diong business with <span>Grizzly Mining, Golden King Limited, Wideways International Limited, Hui Fan Mining Limited</span> and various other businesses</p>
+              supply of various goods,currently doing business with <span>Grizzly Mining, Golden King Limited, Wideways International Limited, Hui Fan Mining Limited</span> and various other businesses</p>
           </section>
           <section className={styles.policy}>
            <h1>Our Policies</h1>

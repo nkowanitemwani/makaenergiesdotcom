@@ -4,23 +4,23 @@
     height: fit-content;
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
 }
 
 .container h1 {
     font-size: 1.5rem;
-    padding: 1rem 1rem;
 }
 
 .container h2 {
     font-size: 1.25rem;
     font-weight: 500;
-    padding: 1rem 1rem;
+    padding: 0.5rem 0;
 }
 
 .container h3 {
     font-size: 1.25rem;
     font-weight: 500;
-    padding: 1rem 1rem;
+    padding: 1.5rem;
 }
 
 /* Tablet */
@@ -38,10 +38,10 @@
         padding: 20px;
     }
     .container h1 {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .container h2,
     .container h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }

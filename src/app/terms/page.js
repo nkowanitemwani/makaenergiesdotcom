@@ -11,7 +11,7 @@ export default function TermsPage(){
         <HomeNav style={{background : "#1a2332"}}></HomeNav>
         <section>
          <div className={styles.container}>
-            <span className="span">
+            <span>
             <h1>TERMS OF USE</h1>
 
             Maka Energies Ltd |

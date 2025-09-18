@@ -1,5 +1,5 @@
 import styles from "./servicegrid.module.css"
-import CompactCard from "../../cards/servicecard";
+import CompactCard from "../../cards/compactcard";
 import { Bolt, Building, Power, Sun, ToolCase, Zap } from "lucide-react";
 
 const services = [

@@ -1,7 +1,9 @@
 import InfoCard from "../../cards/infocard";
 import React from "react";
 import { Handshake,Users,Link,Zap } from "lucide-react";
-import styles from "./missiongrid.module.css"
+import styles from "@/app/components/grids/servicegrid/servicegrid.module.css"
+import CompactCard from "../../cards/servicecard";
+
 
 
 const missions = [
@@ -27,13 +29,13 @@ const missions = [
 
 export default function MissionGrid(){
   return(
-    <div className={styles.missionGrid}>
+    <div className={styles.cardContainer}>
       {missions.map((mission,index) =>(
-        <InfoCard 
+        <CompactCard 
         key={index}
         icon={mission.icon}
         title={mission.title}>   
-        </InfoCard>
+        </CompactCard>
       ))}
     </div>
   );

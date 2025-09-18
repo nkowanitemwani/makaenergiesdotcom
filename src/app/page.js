@@ -8,6 +8,7 @@ import WorksGrid from "./components/grids/worksgrid/page";
 import GetInTocuh from "./components/grids/getintouchgrid";
 import Footer from "./components/footer";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -20,7 +21,7 @@ const viewCertificates = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Maka Energies Limited",
-    "url": "https://makaenergiesdotcom.vercel.app/",
+    "url": "https://makaenergies.org/",
     "description": "Energy solutions provider in Zambia",
     "address": {
       "@type": "PostalAddress",
@@ -42,7 +43,7 @@ const viewCertificates = () => {
         <title>Maka Energies Limited - Energy Solutions</title>
         <meta name="description" content="Maka Energies Limited provides comprehensive energy solutions and services..." />
         <meta name="keywords" content="Maka Energies, energy solutions, power generation" />
-        <link rel="canonical" href="https://makaenergiesdotcom.vercel.app/" />
+        <link rel="canonical" href="https://makaenergies.org/" />
         <script 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -62,11 +63,30 @@ const viewCertificates = () => {
           </div>
           </div>
         </section>
-        <section className={styles.who}>
-          <h1>Who Are We ?</h1>
-          <p>MAKA ENERGIES LIMITED is a proudly Zambian-owned company based in Kalulushi District, Copperbelt Province committed to advancing the nation&apos;s energy sector through innovation, affordability, and quality service delivery. 
-            Rooted in a deep understanding of Zambia&apos;s unique energy needs, the company is dedicated to providing efficient and cost-effective electricity solutions that empower both individuals and businesses across Zambia
-          </p>
+        <section className={styles.whoSection}>
+            <div className={styles.contentWrapper}>
+                <div className={styles.textContent}>
+                    <h1>Who Are We ?</h1>
+                    <p>
+                        MAKA ENERGIES LIMITED is a proudly Zambian-owned company based in Kalulushi District, 
+                        Copperbelt Province committed to advancing the nation&apos;s energy sector through 
+                        innovation, affordability, and quality service delivery. Rooted in a deep understanding 
+                        of Zambia&apos;s unique energy needs, the company is dedicated to providing efficient 
+                        and cost-effective electricity solutions that empower both individuals and businesses 
+                        across Zambia.
+                    </p>
+                </div>
+                <div className={styles.imageContent}>
+                    <Image
+                        src="/images/who2.jpg"
+                        alt="Maka Energies Limited - Zambian Energy Company"
+                        width={600}
+                        height={400}
+                        className={styles.whoImage}
+                        priority
+                    />
+                </div>
+            </div>
         </section>
         <section className={styles.mission}>
            <h1>Our Mission</h1>

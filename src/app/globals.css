@@ -59,7 +59,7 @@ p{
   font-weight: 500;
   font-size: 1.5rem;
   opacity: 0.9;
-  line-height: 1.25;
+  line-height: 1.275;
 }
 
 footer {
@@ -85,7 +85,7 @@ hr{
 }
 
 section{
-  padding: 80px;
+  padding: 50px;
   gap: 1.5rem;
   display: flex;
   flex-direction: column;

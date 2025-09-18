@@ -1,5 +1,5 @@
 import styles from "./servicegrid.module.css"
-import CompactServiceCard from "../../cards/servicecard";
+import CompactCard from "../../cards/servicecard";
 import { Bolt, Building, Power, Sun, ToolCase, Zap } from "lucide-react";
 
 const services = [
@@ -40,7 +40,7 @@ export default function ServiceGrid(){
             </div>
             <div className={styles.cardContainer}>
                 {services.map((service,index) => (
-                    <CompactServiceCard
+                    <CompactCard
                         key={index}
                         icon={service.icon}
                         title={service.title}

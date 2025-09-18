@@ -4,7 +4,7 @@
   flex-direction: column;
   background: url("/images/maka2-small.jpg");
   background-position: center;
-  background-color: rgba(2, 12, 52, 0.65);
+  background-color: rgba(2, 12, 52, 0.5);
   background-blend-mode: overlay;
   background-size: cover;
   background-attachment: fixed; /* Parallax effect on desktop */
@@ -59,6 +59,8 @@
   flex-wrap: wrap;
   animation: fadeInUp 0.8s ease-out 0.3s both;
 }
+
+
 
 /* Fade in animation */
 @keyframes fadeInUp {
@@ -155,6 +157,156 @@
     margin: 0 auto;
     justify-content: center;
   }
+}
+
+.whoSection {
+    padding: 80px;
+    background-color: #f8f9fb;
+}
+
+.contentWrapper {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 400px;
+}
+
+.textContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1.5rem;
+}
+
+
+.textContent p {
+    opacity: 0.9;
+    margin: 0;
+}
+
+.imageContent {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whoImage {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.whoImage:hover {
+    transform: scale(1.02);
+}
+
+/* Tablet styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .whoSection {
+        padding: 60px 40px;
+    }
+    
+    .contentWrapper {
+        gap: 3rem;
+        min-height: 350px;
+    }
+    
+    .textContent h1 {
+        font-size: 2.2rem;
+    }
+    
+    .textContent p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Large mobile / small tablet (481px - 768px) */
+@media screen and (max-width: 768px) {
+    .whoSection {
+        padding: 40px 20px;
+    }
+    
+    .contentWrapper {
+        flex-direction: column;
+        gap: 2.5rem;
+        min-height: auto;
+    }
+    
+    .textContent {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .textContent h1 {
+        font-size: 2rem;
+    }
+    
+    .textContent p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .imageContent {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile phone styles (up to 480px) */
+@media screen and (max-width: 480px) {
+    .whoSection {
+        padding: 30px 15px;
+    }
+    
+    .contentWrapper {
+        gap: 2rem;
+    }
+    
+    .textContent h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    
+    .textContent p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .imageContent {
+        max-width: 100%;
+    }
+    
+    .whoImage {
+        border-radius: 8px;
+    }
+}
+
+/* Very small screens (up to 320px) */
+@media screen and (max-width: 320px) {
+    .whoSection {
+        padding: 20px 10px;
+    }
+    
+    .contentWrapper {
+        gap: 1.5rem;
+    }
+    
+    .textContent h1 {
+        font-size: 1.5rem;
+    }
+    
+    .textContent p {
+        font-size: 0.9rem;
+    }
 }
 
 /* MOBILE PHONE STYLES (320px - 480px) */

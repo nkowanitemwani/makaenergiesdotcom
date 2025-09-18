@@ -1,6 +1,6 @@
 import styles from "./servicecard.module.css"
 
-export default function CompactServiceCard({icon: Icon, title}) {
+export default function CompactCard({icon: Icon, title}) {
     return(
         <div className={styles.compactCard}>
             {Icon && (

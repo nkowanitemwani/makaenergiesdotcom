@@ -20,7 +20,7 @@ const viewCertificates = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Maka Energies Limited",
-    "url": "https://makaenergiesdotcom.vercel.app/",
+    "url": "https://makaenergies.org/",
     "description": "Energy solutions provider in Zambia",
     "address": {
       "@type": "PostalAddress",

@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://makaenergiesdotcom.vercel.app/',
+  siteUrl: 'https://makaenergies.org/',
   generateRobotseTxt: true,
   sitemapSize: 7000,
   changefreq: 'monthly',

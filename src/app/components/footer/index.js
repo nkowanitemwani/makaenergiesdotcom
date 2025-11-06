@@ -21,7 +21,7 @@ export default function Footer(){
               <li><Link href="/services">Services</Link></li>
               <li><Link href="/contact">Contact</Link></li>
               <li><Link href="/team">Our Team</Link></li>
-              <li><Link href="/careers">Careers</Link></li>    
+              {/* <li><Link href="/careers">Careers</Link></li>     */}
             </ul>
            </div>
           <div className={styles.footerInfoRight}>

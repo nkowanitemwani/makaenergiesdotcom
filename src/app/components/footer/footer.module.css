@@ -1,10 +1,12 @@
 .footerInfo {
   display: flex;
-  gap: 2rem;
+  gap: 3rem; /* Increased from 2rem for better spacing */
   padding: 100px;
-  justify-content: space-between;
+  justify-content: center; /* Changed from space-between */
   align-items: flex-start;
   flex-wrap: wrap;
+  max-width: 1400px; /* Add max-width to prevent excessive spreading */
+  margin: 0 auto; /* Center the footer */
 }
 
 .footerInfo h3 {
@@ -18,7 +20,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  flex: 1;
+  flex: 0 1 300px; /* Changed from flex: 1 */
   min-width: 250px;
 }
 
@@ -42,7 +44,7 @@
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  flex: 1;
+  flex: 0 1 250px; /* Changed from flex: 1 */
   min-width: 200px;
 }
 
@@ -53,7 +55,7 @@
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  flex: 1;
+  flex: 0 1 280px; /* Changed from flex: 1 */
   min-width: 200px;
 }
 
@@ -82,15 +84,14 @@
 @media screen and (max-width: 1024px) {
   .footerInfo {
     padding: 80px 60px;
-    gap: 2rem;
+    gap: 2.5rem;
     justify-content: center;
   }
   
   .footerInfoLeft,
   .footerInfoCenter,
   .footerInfoRight {
-    min-width: 200px;
-    flex: 1 1 300px;
+    flex: 0 1 280px; /* Keep consistent sizing */
   }
 }
 
@@ -99,7 +100,7 @@
   .footerInfo {
     flex-direction: column;
     padding: 60px 40px;
-    gap: 1rem;
+    gap: 2.5rem; /* Increased gap for better separation */
     align-items: center;
     text-align: center;
   }
@@ -111,6 +112,7 @@
     max-width: 400px;
     min-width: auto;
     align-items: center;
+    flex: none; /* Remove flex on mobile */
   }
   
   .footerInfo h3 {
@@ -130,11 +132,11 @@
 @media screen and (max-width: 480px) {
   .footerInfo {
     padding: 40px 20px;
-    gap: 1rem;
+    gap: 2rem; /* Consistent spacing */
   }
   
   .footerInfoLeft {
-    margin-bottom: 1rem;
+    margin-bottom: 0; /* Removed extra margin */
   }
   
   .footerInfoLeftText h1 {
@@ -181,7 +183,7 @@
 @media screen and (max-width: 320px) {
   .footerInfo {
     padding: 30px 15px;
-    gap: 1rem;
+    gap: 1.5rem;
   }
   
   .footerInfoLeftText h1 {

@@ -5,6 +5,7 @@ import Link from "next/link";
 import Button from "../button";
 
 export default function HomeNav ({...props}){
+
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const toggleMobileMenu = () => {
@@ -29,7 +30,6 @@ export default function HomeNav ({...props}){
                         <Link href="/services">Services</Link>
                         <Link href="/contact">Contact</Link>
                         <Link href="/team">Our Team</Link>
-                        <Link href="/careers">Careers</Link>
                     </div>
                     
                     {/* Desktop/Tablet Get Quote Button */}
@@ -40,24 +40,24 @@ export default function HomeNav ({...props}){
                     </div>
                     
                     {/* Mobile Hamburger Menu Button */}
-                    <button className={styles.mobileMenuButton} onClick={toggleMobileMenu}>
+                    <button 
+                        className={`${styles.mobileMenuButton} ${mobileMenuOpen ? styles.open : ''}`} 
+                        onClick={toggleMobileMenu}
+                    >
                         <span></span>
                         <span></span>
                         <span></span>
                     </button>
                 </nav>
             </header>
-
-            {/* Mobile Menu Overlay */}
+            
+            {/* Mobile Menu Dropdown */}
             <div className={`${styles.mobileMenu} ${mobileMenuOpen ? styles.active : ''}`}>
-                <button className={styles.closeButton} onClick={closeMobileMenu}>
-                    &times;
-                </button>
                 <Link href="/about" onClick={closeMobileMenu}>About</Link>
                 <Link href="/services" onClick={closeMobileMenu}>Services</Link>
                 <Link href="/contact" onClick={closeMobileMenu}>Contact</Link>
                 <Link href="/team" onClick={closeMobileMenu}>Our Team</Link>
-                <Link href="/careers" onClick={closeMobileMenu}>Careers</Link>
+                {/* <Link href="/careers" onClick={closeMobileMenu}>Careers</Link> */}
                 <div style={{marginTop: '1rem'}}>
                     <Button 
                         href="/contact#quote" 
@@ -68,6 +68,11 @@ export default function HomeNav ({...props}){
                     </Button>
                 </div>
             </div>
+            
+            {/* Backdrop overlay */}
+            {mobileMenuOpen && (
+                <div className={styles.backdrop} onClick={closeMobileMenu}></div>
+            )}
         </>
     );
 }

@@ -4,6 +4,7 @@ import HomeNav from "@/app/components/navbar";
 import Footer from "@/app/components/footer";
 import ServiceGrid from "@/app/components/grids/servicegrid";
 import Head from "next/head";
+import SectionHeader from "../components/sectionheader";
 
 export default function ServicesPage(){
     return(
@@ -16,8 +17,9 @@ export default function ServicesPage(){
           <HomeNav style={{background : "#1a2332"}}></HomeNav>
           <div className={styles.serviceContainer}>
             <section className={styles.service}>
-              <h1>What We Do</h1>
-              <p>Our expertise spans multiple sectors of the economy, specializing in:</p>
+              <SectionHeader
+              title="What We Do"
+              subtitle="Our expertise spans multiple sectors of the economy, specializing in:"></SectionHeader>
               <p><span>•Electical Supplies And Maintenance:</span> Panels, Switch gears, contactors, 
               breakers, cables, motors, generator installations and maintenance, transformer equipment
               and accessories, among other numerous items. </p>

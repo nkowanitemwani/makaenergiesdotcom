@@ -51,8 +51,14 @@ li{
 }
 
 h1 {
+  font-size: 2.5rem;
   font-weight: 700;
-  font-size: 2rem;
+  color: #1a2332;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.02em;
+  position: relative;
+  z-index: 2;
+  line-height: 1.2;
 }
 
 p{

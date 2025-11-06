@@ -9,6 +9,7 @@ import GetInTocuh from "./components/grids/getintouchgrid";
 import Footer from "./components/footer";
 import Head from "next/head";
 import Image from "next/image";
+import SectionHeader from "./components/sectionheader";
 
 export default function Home() {
 
@@ -89,17 +90,22 @@ const viewCertificates = () => {
             </div>
         </section>
         <section className={styles.mission}>
-           <h1>Our Mission</h1>
-          <p>built on four core principles</p>
+          <SectionHeader
+          title="Our Mission"
+          subtitle="Built on four core principles"></SectionHeader>
           <MissionGrid></MissionGrid>
         </section>
         <section className={styles.work}>
-           <h1>Past Work & Achievements</h1>
+           <SectionHeader
+           title="Past Work & Achievements"
+           subtitle="A look at some of our best projects"></SectionHeader>
            <WorksGrid></WorksGrid>
            <Button onClick={viewCertificates}>View Certificates</Button>
         </section>
         <section className={styles.quickContact}>
-          <h1>Get In Touch</h1>
+          <SectionHeader
+          title="Get In Touch"
+          subtitle="Call, Email or pay us a Visit"></SectionHeader>
           <GetInTocuh></GetInTocuh>
         </section>
         <Footer></Footer>

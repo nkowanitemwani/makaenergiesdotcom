@@ -1,40 +1,41 @@
 /* Team Grid CSS - teamgrid.module.css */
 .teamGrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     justify-items: center;
-    align-items: center;
+    align-items: start;
     padding: 50px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 /* Tablet styles (768px - 1024px) */
 @media screen and (max-width: 1024px) {
     .teamGrid {
-        padding: 40px;
+        padding: 40px 30px;
         gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 }
 
 /* Large mobile / small tablet (481px - 768px) */
 @media screen and (max-width: 768px) {
     .teamGrid {
-        grid-template-columns: repeat(2, 1fr); /* Keep 2 columns */
+        grid-template-columns: 1fr;
         padding: 30px 20px;
-        gap: 1.5rem;
+        gap: 2rem;
+        max-width: 400px;
     }
 }
 
 /* Mobile phone styles (up to 480px) */
 @media screen and (max-width: 480px) {
     .teamGrid {
-        grid-template-columns: 1fr; /* Switch to single column */
+        grid-template-columns: 1fr;
         padding: 20px 15px;
-        gap: 1.25rem;
-        max-width: 200px; /* Center single column cards */
-        margin: 0 auto;
+        gap: 1.5rem;
+        max-width: 350px;
     }
 }
 
@@ -42,7 +43,7 @@
 @media screen and (max-width: 320px) {
     .teamGrid {
         padding: 15px 10px;
-        gap: 1rem;
-        max-width: 160px; /* Adjust for smaller cards */
+        gap: 1.25rem;
+        max-width: 280px;
     }
 }

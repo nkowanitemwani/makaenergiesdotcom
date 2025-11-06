@@ -1,0 +1,129 @@
+.sectionHeader {
+  padding: 3rem 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.sectionHeader.center {
+  text-align: center;
+}
+
+.sectionHeader.left {
+  text-align: left;
+}
+
+.sectionHeader.right {
+  text-align: right;
+}
+
+.sectionHeader h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a2332;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.02em;
+  position: relative;
+  z-index: 2;
+  line-height: 1.2;
+}
+
+.sectionHeader p {
+  font-size: 1.1rem;
+  color: #64748b;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Optional: Add a subtle background accent */
+.sectionHeader::before {
+  content: attr(data-bg-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  font-weight: 900;
+  color: #f8f9fb;
+  opacity: 0.5;
+  z-index: 1;
+  letter-spacing: -0.05em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+  .sectionHeader {
+    padding: 2.5rem 1rem;
+  }
+  
+  .sectionHeader h1 {
+    font-size: 2.5rem;
+  }
+  
+  .sectionHeader p {
+    font-size: 1rem;
+  }
+  
+  .sectionHeader::before {
+    font-size: 6rem;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .sectionHeader {
+    padding: 2rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .sectionHeader h1 {
+    font-size: 2rem;
+  }
+  
+  .sectionHeader p {
+    font-size: 0.95rem;
+  }
+  
+  .sectionHeader::before {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sectionHeader {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .sectionHeader h1 {
+    font-size: 1.75rem;
+  }
+  
+  .sectionHeader p {
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+  }
+  
+  .sectionHeader::before {
+    font-size: 3.5rem;
+    opacity: 0.4;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sectionHeader h1 {
+    font-size: 1.5rem;
+  }
+  
+  .sectionHeader p {
+    font-size: 0.8rem;
+  }
+  
+  .sectionHeader::before {
+    font-size: 3rem;
+  }
+}

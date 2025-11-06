@@ -1,6 +1,7 @@
 import styles from "./servicegrid.module.css"
 import CompactCard from "../../cards/compactcard";
 import { Bolt, Building, Power, Sun, ToolCase, Zap } from "lucide-react";
+import SectionHeader from "../../sectionheader";
 
 const services = [
     {
@@ -35,8 +36,10 @@ export default function ServiceGrid(){
     return(
         <div className={styles.serviceGrid}>
             <div className={styles.gridHeader}>
-                <h1>Our Services</h1>
-                <p>Comprehensive solutions for your business needs</p>
+                <SectionHeader
+                title="Our Services"
+                subtitle="Comprehensive solutions for your business needs"></SectionHeader>
+                
             </div>
             <div className={styles.cardContainer}>
                 {services.map((service,index) => (

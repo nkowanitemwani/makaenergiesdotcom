@@ -11,6 +11,7 @@ import Button from "@/app/components/button";
 import PolicyCard from "@/app/components/cards/policycard";
 import Head from "next/head";
 import Image from "next/image";
+import SectionHeader from "../components/sectionheader";
 
 export default function AboutPage(){
 
@@ -58,14 +59,20 @@ export default function AboutPage(){
 
           </section>
           <section className={styles.policy}>
-           <h1>Our Policies</h1>
+           <SectionHeader
+           title="Our Policies"
+           subtitle="We put our workers and clients best interests first"></SectionHeader>
            <PolicyGrid></PolicyGrid>
            <Button onClick={openPolicyCard}>View Policies</Button>
           </section>
           {policyCard && (<PolicyCard onClose={closePolicyCard}></PolicyCard>) }
           <section className={styles.legal}>
-           <h1>Legal Compliance</h1>
-           <p>We are fully compliant with</p>
+            <SectionHeader
+            title="Legal Compliance"
+            subtitle="We are fully compliant with"
+            titleColor="#f8f9fb">
+          
+            </SectionHeader>
             <ol>
               <li>PACRA: registered as PRIVATE COMPANY LIMITED BY SHARES.</li>
               <li>Zambia Revenue Authority: certification for general tax clearance and value added tax account registration.</li>

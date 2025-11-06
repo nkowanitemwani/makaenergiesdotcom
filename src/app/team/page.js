@@ -3,6 +3,7 @@ import HomeNav from "@/app/components/navbar";
 import Footer from "@/app/components/footer";
 import TeamGrid from "@/app/components/grids/teamgrid";
 import Head from "next/head";
+import SectionHeader from "../components/sectionheader";
 
 export default function TeamPage(){
     return(
@@ -14,7 +15,9 @@ export default function TeamPage(){
         <main>
           <HomeNav style={{background : "#1a2332"}}></HomeNav>
           <section>
-            <h1>Meet The Maka Energies Team</h1>
+            <SectionHeader
+            title="Meet The Maka Energies Team"
+            subtitle="Our founding members"></SectionHeader>
             <p>Our leadership team represents a powerful combination of academic excellence, practical industry experience, 
               and entrepreneurial vision. With collective decades of experience in Zambia&apos;s electrical utilities sector, 
               our directors bring deep technical knowledge and proven track records from their tenure with ZESCO and other leading organizations.</p>

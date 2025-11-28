@@ -38,23 +38,21 @@ export default function AboutPage(){
           <HomeNav style={{background : "#1a2332"}}></HomeNav>
           <section className={style.whoSection}>
             <div className={style.contentWrapper}>
+              <div className={style.imageContent}>
+                  <Image
+                  src="/images/history.png"
+                  alt="company history illustration"
+                  width={400}
+                  height={400}
+                  className={style.whoImage}
+                  priority></Image>
+              </div>
               <div className={style.textContent}>
                 <h1>Company History</h1>
                 <p>MAKA ENERGIES LIMITED was registered on the 25th of january,2023 in Zambia by the registrar of companies. With the aim of providing quality goods and services to both local and international clients.
                   Since then we have made steady progress in various sectors of the economy, venturing into electrical and mechanical engineering, civil construction and the 
                   supply of various goods,currently doing business with <span>Grizzly Mining, Golden King Limited, Wideways International Limited, Hui Fan Mining Limited</span> and various other businesses</p>
-
               </div>
-            
-            <div className={style.imageContent}>
-                <Image
-                src="/images/history.png"
-                alt="company history illustration"
-                width={400}
-                height={400}
-                className={style.whoImage}
-                priority></Image>
-            </div>
             </div>
 
           </section>

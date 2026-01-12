@@ -109,7 +109,6 @@ const viewCertificates = () => {
           subtitle="Call, Email or pay us a Visit"></SectionHeader>
           <GetInTocuh></GetInTocuh>
         </section>
-        <Alert></Alert>
         <Footer></Footer>
         
       </main>

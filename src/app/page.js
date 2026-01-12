@@ -10,6 +10,7 @@ import Footer from "./components/footer";
 import Head from "next/head";
 import Image from "next/image";
 import SectionHeader from "./components/sectionheader";
+import Alert from "./components/alert";
 
 export default function Home() {
 
@@ -108,6 +109,7 @@ const viewCertificates = () => {
           subtitle="Call, Email or pay us a Visit"></SectionHeader>
           <GetInTocuh></GetInTocuh>
         </section>
+        <Alert></Alert>
         <Footer></Footer>
         
       </main>

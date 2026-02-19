@@ -3,19 +3,16 @@
 import React, { useEffect } from "react";
 import styles from "./alert.module.css";
 import Button from "../button";
-import { X } from "lucide-react";
 
 export default function Alert({
     icon: Icon,
     message,
     onClose,
     type = "info",
-    showCloseButton = true,
     autoClose = false,
     autoCloseDelay = 5000
 }) {
     
-    // Auto-close functionality
     useEffect(() => {
         if (autoClose && onClose) {
             const timer = setTimeout(onClose, autoCloseDelay);
@@ -23,7 +20,6 @@ export default function Alert({
         }
     }, [autoClose, autoCloseDelay, onClose]);
     
-    // Close on Escape key
     useEffect(() => {
         const handleEscape = (e) => {
             if (e.key === 'Escape' && onClose) {
@@ -56,28 +52,12 @@ export default function Alert({
                 onClick={(e) => e.stopPropagation()}
             >
                 <div className={`${styles.container} ${styles[type] || ''}`}>
-                    {/* Close button in top-right corner */}
-                    {showCloseButton && (
-                        <button 
-                            className={styles.closeButton}
-                            onClick={onClose}
-                            aria-label="Close alert"
-                        >
-                            <X size={16} />
-                        </button>
-                    )}
-                    
-                    {/* Icon */}
                     {Icon && (
                         <div className={styles.iconWrapper}>
                             <Icon className={styles.icon} size={32} strokeWidth={1.5} />
                         </div>
                     )}
-                    
-                    {/* Message */}
                     <h2 id="alert-message">{message}</h2>
-                    
-                    {/* Action button */}
                     <Button 
                         onClick={onClose} 
                         style={{

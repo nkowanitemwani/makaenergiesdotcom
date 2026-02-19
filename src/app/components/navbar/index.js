@@ -51,6 +51,7 @@ export default function HomeNav ({...props}){
                 </nav>
             </header>
             
+            
             {/* Mobile Menu Dropdown */}
             <div className={`${styles.mobileMenu} ${mobileMenuOpen ? styles.active : ''}`}>
                 <Link href="/about" onClick={closeMobileMenu}>About</Link>

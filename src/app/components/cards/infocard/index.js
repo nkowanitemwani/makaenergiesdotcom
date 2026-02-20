@@ -1,11 +1,12 @@
 
 import styles from "./infocard.module.css"
 
-export default function InfoCard ({icon: Icon, title, subTitle}){
+export default function InfoCard ({icon: Icon, title, subTitle,...props}){
 
+    const {p, ...validProps} = props;
 
     return(
-        <div className={styles.card}>
+        <div className={styles.card} {...validProps}>
               {Icon && (
                 <div className={styles.iconWrapper}>
                     <Icon className={styles.icon} size={32} strokeWidth={1.5} />

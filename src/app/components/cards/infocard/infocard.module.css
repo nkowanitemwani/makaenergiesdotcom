@@ -14,6 +14,9 @@
   justify-content: flex-start;
   gap: 1rem;
   position: relative;
+  --icon-color: currentColor;
+  --title-color: inherit;
+  --subtitle-color: inherit;
 }
 
 .card:hover {
@@ -34,13 +37,13 @@
 }
 
 .icon {
-  color: #ff6b35;
+  color: var(--icon-color);
 }
 
 .title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1a2332;
+  color: var(--title-color);
   margin: 0;
   line-height: 1.3;
   text-align: center;
@@ -55,7 +58,7 @@
 
 .subTitle {
   font-size: 1rem;
-  color: #1a2332;
+  color: var(--subtitle-color);
   margin: 0;
   line-height: 1.5;
   flex-grow: 1; /* Takes remaining space */

@@ -3,16 +3,16 @@ import styles from "./compliance.module.css"
 import InfoCard from "../../cards/infocard";
 import SectionHeader from "../../sectionheader";
 import Button from "../../button";
-import { Building, Construction, HandCoins, HardHat, Paperclip, Shield, ToolCase } from "lucide-react";
+import { Building, Construction, HandCoins, HardHat, Landmark, Paperclip, Shield, ToolCase } from "lucide-react";
 
 const compliances = [
     {
         icon:Building,
         title:"PACRA",
-        subtitle: "registered as a Private Company Limited  by SharesS"
+        subtitle: "registered as a Private Company Limited  by Shares"
     },
     {
-        icon:Paperclip,
+        icon:Landmark,
         title:"Zambia Revenue Authority",
         subtitle:"certification for general tax clearance and value added tax account registration"
     },
@@ -63,14 +63,13 @@ export default function ComplianceGrid(){
             <div className={styles.cardContainer}>
                 {compliances.map((compliance,index) => (
                     <InfoCard
+                    style={{background : "#1a2332", '--icon-color': ' #ff6b35','--title-color': '#f8f9fb','--subtitle-color': '#64748b'}}
                     key={index}p
                     icon={compliance.icon}
                     title={compliance.title}
-                    subTitle={compliance.subtitle}></InfoCard>
-                ))
-
-                }
-
+                    subTitle={compliance.subtitle}
+                    ></InfoCard>
+                ))}
             </div>
             <Button onClick={viewResgistration}>View Documents</Button>
         </div>

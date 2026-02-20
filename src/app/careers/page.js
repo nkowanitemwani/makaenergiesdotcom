@@ -25,7 +25,7 @@ export default function CareersPage(){
         <section>
             <h1>Current Opportunities</h1>
             <p>Ready to be part of Zambia&apos;s growing energy sector? Explore our current openings below and join a team that&apos;s building the future of electrical engineering and energy solutions in Zambia.</p>
-            <InfoCard icon={StopCircle} title={"No openings at the moment"}></InfoCard>
+            <InfoCard icon={StopCircle} title={"No openings at the moment"} style={{'--icon-color': ' #ff6b35','--title-color': '#1a2332','--subtitle-color': '#1a2332'}}></InfoCard>
         </section>
         <section>
         {/* <CareersGrid></CareersGrid> */}

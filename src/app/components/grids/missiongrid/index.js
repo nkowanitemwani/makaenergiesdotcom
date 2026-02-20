@@ -1,4 +1,3 @@
-import InfoCard from "../../cards/infocard";
 import React from "react";
 import { Handshake,Users,Link,Zap } from "lucide-react";
 import styles from "@/app/components/grids/servicegrid/servicegrid.module.css"

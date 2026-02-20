@@ -33,6 +33,7 @@ export default function WorksGrid(){
         <div className={styles.missionGrid}>
             {works.map((work,index) => (
                 <InfoCard 
+                style={{'--icon-color': ' #ff6b35','--title-color': '#1a2332','--subtitle-color': '#1a2332'}}
                 key={index}
                 title={work.title}
                 subTitle={work.subTitle}>

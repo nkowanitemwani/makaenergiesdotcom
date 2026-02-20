@@ -24,6 +24,7 @@ export default function PolicyGrid(){
         <div className={styles.missionGrid}>
             {policies.map((policy,index) => (
                 <InfoCard
+                style={{'--icon-color': ' #ff6b35','--title-color': '#1a2332','--subtitle-color': '#1a2332'}}
                 key={index}
                 title={policy.title}
                 icon={policy.icon}></InfoCard>

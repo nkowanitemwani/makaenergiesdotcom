@@ -33,6 +33,7 @@ export default function GetInTocuh(){
             icon={contact.icon}
             title={contact.title}
             subTitle={contact.subTitle}
+            style={{'--icon-color': ' #ff6b35','--title-color': '#1a2332','--subtitle-color': '#1a2332'}}
             ></InfoCard>
          ))}
         </div>

@@ -12,6 +12,7 @@ import PolicyCard from "@/app/components/cards/policycard";
 import Head from "next/head";
 import Image from "next/image";
 import SectionHeader from "../components/sectionheader";
+import ComplianceGrid from "../components/grids/compliancegrid";
 
 export default function AboutPage(){
 
@@ -19,14 +20,6 @@ export default function AboutPage(){
   const openPolicyCard = () => setPolicyCard(true);
   const closePolicyCard = () => setPolicyCard(false);
 
-
-  const viewResgistration = () => {
-  window.open("https://drive.google.com/file/d/1PQqzhMcWzgBHm6Dbo-NoVd98rP7z7NM3/view?usp=drive_link","_blank");
-};
-
-
-
-  
     return(
      <>
     <Head>
@@ -65,22 +58,7 @@ export default function AboutPage(){
           </section>
           {policyCard && (<PolicyCard onClose={closePolicyCard}></PolicyCard>) }
           <section className={styles.legal}>
-            <SectionHeader
-            title="Legal Compliance"
-            subtitle="We are fully compliant with"
-            titleColor="#f8f9fb">
-          
-            </SectionHeader>
-            <ol>
-              <li>PACRA: registered as PRIVATE COMPANY LIMITED BY SHARES.</li>
-              <li>Zambia Revenue Authority: certification for general tax clearance and value added tax account registration.</li>
-              <li>National Pension Scheme Authority.</li>
-              <li>Workers Compensation Fund.</li>
-              <li>Engineering Registration Board: registered as an engineering organisation and authorised to practice engineering in Zambia.</li>
-              <li>National Council For Construction: grade 6 category C general engineering works certification.</li>
-              <li>Zambia Public Procurement Authority.</li>
-            </ol>
-           <Button onClick={viewResgistration}>View Documents</Button>
+            <ComplianceGrid></ComplianceGrid>
           </section>
           <section className={style.whoSection}>
             <div className={style.contentWrapper}>

@@ -6,15 +6,18 @@ import styles from "../missiongrid/missiongrid.module.css"
 const policies = [
     {
         title:"Health And Safety Policy",
-        icon: Hospital
+        icon: Hospital,
+        subtitle: " Ensures workers are safe and healthy at all times, and that services delivered are not hazardous to clients or the company."
     },
     {
         title:"Environmental Policy",
-        icon:Trees
+        icon:Trees,
+        subtitle:"Ensures compliance with national environmental policies formulated by ZEMA, delivering safe products and services to clients."
     },
     {
         title:"Security Policy",
-        icon: Lock
+        icon: Lock,
+        subtitle: "Ensures worker interests are protected at all times."
     }
 ];
 
@@ -24,10 +27,11 @@ export default function PolicyGrid(){
         <div className={styles.missionGrid}>
             {policies.map((policy,index) => (
                 <InfoCard
-                style={{'--icon-color': ' #ff6b35','--title-color': '#1a2332','--subtitle-color': '#1a2332'}}
+                style={{'--icon-color': ' #ff6b35','--title-color': '#1a2332','--subtitle-color': '#64748b'}}
                 key={index}
                 title={policy.title}
-                icon={policy.icon}></InfoCard>
+                icon={policy.icon}
+                subTitle={policy.subtitle}></InfoCard>
             ))}
         </div>
     );

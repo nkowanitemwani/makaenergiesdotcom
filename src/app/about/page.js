@@ -7,18 +7,12 @@ import style from "@/app/page.module.css"
 import HomeNav from "@/app/components/navbar";
 import Footer from "@/app/components/footer";
 import PolicyGrid from "@/app/components/grids/policygrid";
-import Button from "@/app/components/button";
-import PolicyCard from "@/app/components/cards/policycard";
 import Head from "next/head";
 import Image from "next/image";
 import SectionHeader from "../components/sectionheader";
 import ComplianceGrid from "../components/grids/compliancegrid";
 
 export default function AboutPage(){
-
-  const [policyCard,setPolicyCard] = useState(false);
-  const openPolicyCard = () => setPolicyCard(true);
-  const closePolicyCard = () => setPolicyCard(false);
 
     return(
      <>
@@ -54,9 +48,7 @@ export default function AboutPage(){
            title="Our Policies"
            subtitle="We put our workers and clients best interests first"></SectionHeader>
            <PolicyGrid></PolicyGrid>
-           <Button onClick={openPolicyCard}>View Policies</Button>
           </section>
-          {policyCard && (<PolicyCard onClose={closePolicyCard}></PolicyCard>) }
           <section className={styles.legal}>
             <ComplianceGrid></ComplianceGrid>
           </section>
